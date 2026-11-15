@@ -1,6 +1,7 @@
 describe("reader module initialization", function()
     local patch_names = {
         "reader_references",
+        "book_lexicon",
         "library_navigation",
         "page_browser",
         "stable_page_statistics",
@@ -39,6 +40,7 @@ describe("reader module initialization", function()
         "screensaver_cover",
         "dict_quick_lookup",
         "reader_references",
+        "book_lexicon",
         "library_navigation",
         "page_browser",
         "status_on_open",
@@ -93,7 +95,7 @@ describe("reader module initialization", function()
         assert.is_nil(_G.__ZEN_UI_RUNTIME_PATCHES.reader_top_status_bar)
 
         assert.is_true(Reader.init(logger, plugin))
-        assert.are.equal(19, #calls)
+        assert.are.equal(20, #calls)
     end)
 
     it("records a successfully enabled runtime status-bar patch", function()
@@ -156,7 +158,7 @@ describe("reader module initialization", function()
         assert.is_true(Reader.init(logger, { config = { features = {} } }))
         assert.are.equal(previous, _G.__ZEN_UI_PLUGIN)
         assert.are.equal("end_book", calls[4])
-        assert.are.equal(19, #calls)
+        assert.are.equal(20, #calls)
         assert.are.equal(1, #warnings)
         assert.are.equal("grouped reader feature failed", warnings[1][1])
         assert.are.equal("book_status", warnings[1][2])
@@ -183,8 +185,8 @@ describe("reader module initialization", function()
         ZenSpec.unload("apps/reader/readerui")
         assert.is_true(ok, loaded)
         assert.are.equal(reader_ui, loaded)
-        assert.are.equal(20, #calls)
-        assert.are.equal("reader_top_status_bar", calls[20])
+        assert.are.equal(21, #calls)
+        assert.are.equal("reader_top_status_bar", calls[21])
         assert.is_nil(package.preload["apps/reader/readerui"])
     end)
 end)

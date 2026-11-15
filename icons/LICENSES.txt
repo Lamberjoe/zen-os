@@ -27,6 +27,8 @@ licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0):
 | `fullscreen_exit.svg` | [mdi:arrow-expand](https://pictogrammers.com/library/mdi/icon/arrow-expand/) | Fixed black fill, 24px dimensions, and inward arrows |
 | `zoom_in.svg` | [mdi:plus](https://icon-sets.iconify.design/mdi/plus/) | Fixed black fill and 24px dimensions |
 | `zoom_out.svg` | [mdi:minus](https://icon-sets.iconify.design/mdi/minus/) | Fixed black fill and 24px dimensions |
+| `lexicon.svg` | [mdi:book-alphabet](https://pictogrammers.com/library/mdi/icon/book-alphabet/) | Fixed black fill and 24px dimensions |
+| `lexicon_picture.svg` | [mdi:image-outline](https://pictogrammers.com/library/mdi/icon/image-outline/) | Fixed black fill and 24px dimensions |
 
 Source: [Material Design Icons](https://github.com/Templarian/MaterialDesign).
 

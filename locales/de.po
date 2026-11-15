@@ -35,11 +35,23 @@ msgstr "%1 (%2)"
 msgid "%1 files"
 msgstr "%1-Dateien"
 
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:641
+msgid "%1 gets “%2: %3”, %3 gets “%4: %1”."
+msgstr "%1 bekommt „%2: %3“, %3 bekommt „%4: %1“."
+
 #. Type: setting
 #. Context: Taktfrequenz des Prozessors in Gigahertz; %1 ist ein einzelner Wert oder ein Bereich vom niedrigsten bis zum höchsten Wert.
 #: about_settings.lua:22 about_settings.lua:112
 msgid "%1 GHz"
 msgstr "%1 GHz"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:953
+msgid "%1 is …"
+msgstr "%1 ist …"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Leseansicht. Text mit eingesetzten Werten in der Lesezeitanzeige der Lesestatusleiste.
@@ -52,6 +64,12 @@ msgstr "%1 verbleibende Minuten"
 #: reader_footer_time_format.lua:70 reader_settings.lua:1327
 msgid "%1 min left in chapter"
 msgstr "%1 Minuten verbleibend im Kapitel"
+
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:413
+msgid "%1 notes"
+msgstr "%1 Notizen"
 
 #. Type: format
 #. Context: Text mit eingesetzten Werten in der oberen Statusleiste der Leseansicht.
@@ -70,6 +88,12 @@ msgstr "%1 Seiten"
 #: metadata_editor.lua:191
 msgid "%1 rejected its API credential. Open metadata settings?"
 msgstr "%1 hat die API-Anmeldeinformationen abgelehnt. Metadateneinstellungen öffnen?"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:602
+msgid "%1 saved"
+msgstr "%1 gespeichert"
 
 #. Type: format
 #. Context: Text mit eingesetzten Werten im Editor für Buchmetadaten.
@@ -179,6 +203,72 @@ msgstr "(keine)"
 msgid "(standard)"
 msgstr "(Standard)"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:623
+msgid "+ add"
+msgstr "+ hinzufügen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:628 screens.lua:869
+msgid "+ add a fact"
+msgstr "+ Angabe hinzufügen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:638
+msgid "+ add a note"
+msgstr "+ Notiz hinzufügen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:633
+msgid "+ choose a picture"
+msgstr "+ Bild wählen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:423
+msgid "+ New card"
+msgstr "+ Neue Karte"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:507
+msgid "+ New card …"
+msgstr "+ Neue Karte …"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:570
+msgid "+ New card…"
+msgstr "+ Neue Karte…"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:355
+msgid "+ New relation type"
+msgstr "+ Neue Beziehungsart"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:352
+msgid "+ Note"
+msgstr "+ Notiz"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:821
+msgid "+ Own"
+msgstr "+ Eigene"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:906 ui.lua:362
+msgid "+ Relation"
+msgstr "+ Beziehung"
+
 #. Type: subtitle
 #. Context: Untertitel in den Bibliotheksgruppen nach Autoren, Reihen und Schlagwörtern.
 #: group_view.lua:1426
@@ -202,6 +292,12 @@ msgstr "1 Datei"
 #: group_view.lua:1429
 msgid "1 language"
 msgstr "1 Sprache"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:413
+msgid "1 note"
+msgstr "1 Notiz"
 
 #. Type: subtitle
 #. Context: Untertitel in den Bibliotheksgruppen nach Autoren, Reihen und Schlagwörtern.
@@ -431,6 +527,12 @@ msgstr "Zum Vokabeltrainer hinzufügen"
 msgid "added"
 msgstr "hinzugefügt"
 
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:563
+msgid "Added to %1"
+msgstr "Zu %1 hinzugefügt"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:1165
@@ -491,6 +593,12 @@ msgstr "Alle"
 msgid "All books"
 msgstr "Alle Bücher"
 
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:114
+msgid "All cards of this book"
+msgstr "Alle Karten dieses Buchs"
+
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
 #: quickstart_pages.lua:835
@@ -533,6 +641,12 @@ msgstr "Löschen erlauben"
 msgid "Allow dragging reader modals"
 msgstr "Ziehen von Leser-Modalen zulassen"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:89
+msgid "Always"
+msgstr "Immer"
+
 #. Type: error
 #. Context: Fehlermeldung im Editor für Buchmetadaten.
 #: metadata_editor.lua:1094 metadata_editor.lua:1178 metadata_editor.lua:38
@@ -562,6 +676,12 @@ msgstr "Anmerkungsanzeige"
 #: dispatch_action.lua:508 annotation_viewer.lua:28 annotation_viewer.lua:594 book_details.lua:386 page_browser_tabs.lua:49 library_settings.lua:47 home_settings.lua:2487
 msgid "Annotations"
 msgstr "Anmerkungen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:695
+msgid "Antagonist"
+msgstr "Gegenspieler"
 
 #. Type: action
 #. Context: { { text = ({ all = _("All words"), any = _("Any word"), phrase = _("Phrase") })[rule.mode], callback = function() rule.mode = ({ all = "any", any = "phrase", phrase = "all" })[rule.mode]
@@ -935,6 +1055,12 @@ msgstr "Buchdetails"
 msgid "Book info"
 msgstr "Buchinformationen"
 
+#. Type: setting
+#. Context: Bezeichnung einer Einstellung in den Leseeinstellungen.
+#: reader_settings.lua:1692
+msgid "Book lexicon"
+msgstr "Buch-Lexikon"
+
 #. Type: status
 #. Context: Statusanzeige in den Menüs und Dialogen zum Archivieren von Büchern.
 #: archive_actions.lua:215 archive_actions.lua:269
@@ -1229,6 +1355,12 @@ msgstr "Suche nach Updates"
 msgid "Chess"
 msgstr "Schach"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:862
+msgid "Choose a card ›"
+msgstr "Karte wählen ›"
+
 #. Type: option
 #. Context: Auswählbare Option in der Einrichtungsanleitung.
 #: quickstart_pages.lua:872
@@ -1294,6 +1426,12 @@ msgstr "Wählen Sie eine Registerkarte"
 #: library_destination.lua:51
 msgid "Choose tag"
 msgstr "Tag auswählen"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:979
+msgid "Choose the kind, then the card."
+msgstr "Art wählen, dann die Karte."
 
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
@@ -2039,6 +2177,12 @@ msgstr "Standardeinstellungen"
 msgid "Delete"
 msgstr "Löschen"
 
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:872
+msgid "Delete card"
+msgstr "Karte löschen"
+
 #. Type: label
 #. Context: Bezeichnung im Menü für Buchsammlungen.
 #: collections.lua:388
@@ -2062,6 +2206,12 @@ msgstr "Voreinstellung löschen?"
 #: context_menu.lua:727
 msgid "Delete selected files?\nIf you delete a file, it is permanently lost."
 msgstr "Ausgewählte Dateien löschen?\nWenn Sie eine Datei löschen, ist sie unwiderruflich verloren."
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:875
+msgid "Delete the card %1?"
+msgstr "Die Karte %1 löschen?"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Leseansicht.
@@ -2327,6 +2477,24 @@ msgstr "ZenPM wird heruntergeladen"
 msgid "Dynamic filler 2"
 msgstr "Dynamischer Füller 2"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:622 screens.lua:794
+msgid "e.g. Jurgen, Kai"
+msgstr "z. B. Jurgen, Kai"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:822
+msgid "e.g. Narrator's aide"
+msgstr "z. B. Adjutant des Erzählers"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:967
+msgid "e.g. Rival"
+msgstr "z. B. Rivale"
+
 #. Type: action
 #. Context: Bezeichnung einer Aktion in der Einrichtungsanleitung. Bezeichnung im Kontextmenü für Bücher und Ordner. Bezeichnung einer Aktion im Browser für Online-Buchkataloge. Wird auch an anderen Stellen in ZenOS verwendet.
 #: quickstart_pages.lua:307 context_menu.lua:2854 opds.lua:1876 network_switcher.lua:707 annotation_viewer.lua:138 annotation_viewer.lua:141 book_info_widget.lua:116
@@ -2350,6 +2518,12 @@ msgstr "Bearbeitungsmodus"
 #: annotation_viewer.lua:135
 msgid "Edit note"
 msgstr "Bearbeitungshinweis"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:914
+msgid "Edit: %1"
+msgstr "Bearbeiten: %1"
 
 #. Type: label
 #. Context: Bezeichnung im Editor für Buchmetadaten.
@@ -2434,6 +2608,12 @@ msgstr "Aktivierung der Debug-Protokollierung erfordert einen Neustart. Bitte re
 #: end_book_settings.lua:257 reader_settings.lua:1684 home_settings.lua:1528
 msgid "End of book"
 msgstr "Ende des Buches"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:68
+msgid "Enemy"
+msgstr "Feind"
 
 #. Type: message
 #. Context: Hinweis im WLAN-Netzwerkmenü und in den Verbindungsdialogen.
@@ -2573,6 +2753,24 @@ msgstr "Metadaten extrahieren"
 msgid "Extras"
 msgstr "Extras"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:864
+msgid "Facts – one per line, “Key: value”"
+msgstr "Angaben – eine pro Zeile, „Feld: Wert“"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:624
+msgid "Facts – “Key: value”"
+msgstr "Angaben – „Feld: Wert“"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:626 screens.lua:867
+msgid "Facts: one per line"
+msgstr "Angaben: eine pro Zeile"
+
 #. Type: message
 #. Context: Hinweis im WLAN-Netzwerkmenü und in den Verbindungsdialogen. Hinweis in den WLAN-Verbindungsdialogen auf Kobo-Geräten.
 #: network_switcher.lua:476 kobo.lua:188 kobo.lua:285
@@ -2614,6 +2812,12 @@ msgstr "Fehler beim Festlegen des Ordnerdeckels."
 #: zen_bugreporter.lua:420
 msgid "Failed to submit report: "
 msgstr "Bericht konnte nicht gesendet werden: "
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:68
+msgid "Family"
+msgstr "Familie"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite. Bezeichnung in den Navigationsreitern und auf den Schnelleinstellungs-Schaltflächen. Auswählbare Option in der Einrichtungsanleitung. Wird auch an anderen Stellen in ZenOS verwendet.
@@ -2885,6 +3089,18 @@ msgstr "Bluetooth-Gerät %1 vergessen?"
 msgid "Forget Wi-Fi network %1?"
 msgstr "WLAN-Netzwerk %1 vergessen?"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:68
+msgid "Friend"
+msgstr "Freund"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:997
+msgid "From this book"
+msgstr "Aus diesem Buch"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen.
 #: menu_settings.lua:89
@@ -2987,11 +3203,23 @@ msgstr "Grün"
 msgid "Grid"
 msgstr "Netz"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:41
+msgid "Group"
+msgstr "Gruppe"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:329
 msgid "Group book series into folders"
 msgstr "Buchreihen in Ordner gruppieren"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:44
+msgid "Groups"
+msgstr "Gruppen"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Anbietern von Buchmetadaten. Bezeichnung im Editor für Buchmetadaten.
@@ -3004,6 +3232,12 @@ msgstr "Gebundene Ausgabe"
 #: metadata_settings.lua:104 metadata_settings.lua:107
 msgid "Hardcover API token"
 msgstr "Hardcover-API-Token"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:69
+msgid "Has member"
+msgstr "Hat Mitglied"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Menü zur Akkustatistik.
@@ -3233,6 +3467,12 @@ msgstr "Bild: "
 msgid "Image: none"
 msgstr "Bild: keines"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:162 screens.lua:460
+msgid "In this book"
+msgstr "Im Buch"
+
 #. Type: action
 #. Context: rows[1] = { { text = _("Include") .. (mode == "include" and " ✓" or ""), callback = function() UIManager:close(picker); show_facet(pbw, key, title, "include")
 #: annotation_viewer.lua:456 annotation_viewer.lua:491 annotation_viewer.lua:542
@@ -3353,6 +3593,12 @@ msgstr "Invertieren mit Dunkelmodus"
 msgid "IP address"
 msgstr "IP-Adresse"
 
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:645
+msgid "It is another name of an existing card…"
+msgstr "Ist ein anderer Name einer bestehenden Karte…"
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:828 library_settings.lua:830 library_settings.lua:837
@@ -3400,6 +3646,18 @@ msgstr "Bestehende Einstellungen beibehalten"
 #: metadata_editor.lua:947
 msgid "Keep the current file extension."
 msgstr "Die aktuelle Dateierweiterung beibehalten."
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:610 screens.lua:800
+msgid "Kind"
+msgstr "Art"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:967
+msgid "Kind of relation"
+msgstr "Art der Beziehung"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste. Bezeichnung in den Navigationsreitern und auf den Schnelleinstellungs-Schaltflächen. Bezeichnung im Kontextmenü für Bücher und Ordner. Wird auch an anderen Stellen in ZenOS verwendet.
@@ -3545,6 +3803,42 @@ msgstr "Links/rechts"
 msgid "Left/Right Margins"
 msgstr "Linker/Rechter Rand"
 
+#. Type: menu
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:35 controller.lua:106 corner.lua:194 corner.lua:363 store.lua:274
+msgid "Lexicon"
+msgstr "Lexikon"
+
+#. Type: menu
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:119
+msgid "Lexicon box in the status bar"
+msgstr "Lexikon-Kasten in der Statusleiste"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:389
+msgid "Lexicon · this book"
+msgstr "Lexikon · dieses Buch"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:52
+msgid "Lexicon: all cards of the book"
+msgstr "Lexikon: alle Karten des Buchs"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:50
+msgid "Lexicon: Pins & Lexicon window"
+msgstr "Lexikon: Fenster Pins & Lexikon"
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:40
+msgid "Lexicon: something went wrong.\n%1"
+msgstr "Lexikon: Etwas ist schiefgelaufen.\n%1"
+
 #. Type: title
 #. Context: Überschrift im Aktionsmenü für Gesten und Tastenkürzel. Bezeichnung in den Navigationsreitern und auf den Schnelleinstellungs-Schaltflächen. Bezeichnung in der Navigationsleiste der Bibliothek. Wird auch an anderen Stellen in ZenOS verwendet.
 #: dispatch_action.lua:544 nav_button_model.lua:15 navbar.lua:227 stats_page.lua:66 end_book_data.lua:27 zen_settings.lua:73 global_settings.lua:861 stats_settings.lua:33 navbar_settings.lua:168 navbar_settings.lua:237 navbar_settings.lua:1033
@@ -3683,6 +3977,12 @@ msgstr "Lose Symbole in /koreader/icons"
 msgid "Magnify UI"
 msgstr "UI vergrößern"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:695
+msgid "Main"
+msgstr "Hauptfigur"
+
 #. Type: menu
 #. Context: Menüeintrag in den KOReader-Menüs und in der Menüauswahl des Schnellzugriffs.
 #: native_menu.lua:7
@@ -3766,6 +4066,12 @@ msgstr "Maximale Schriftgröße:"
 #: home_settings.lua:2546
 msgid "Maximum quote font size"
 msgstr "Maximale Schriftgröße für Zitate"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:69
+msgid "Member of"
+msgstr "Mitglied von"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste. Bezeichnung in den Navigationsreitern und auf den Schnelleinstellungs-Schaltflächen. Bezeichnung in der Navigationsleiste der Bibliothek.
@@ -3947,6 +4253,36 @@ msgstr "Verschieben nach…"
 msgid "Name"
 msgstr "Name"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:571
+msgid "Name of the new card"
+msgstr "Name der neuen Karte"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:356
+msgid "Name | on the other card"
+msgstr "Name | auf der anderen Karte"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:334
+msgid "Name · on the other card (Name | Other)"
+msgstr "Name · auf der anderen Karte (Name | Andere)"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:609
+msgid "Name …"
+msgstr "Name …"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:695
+msgid "Narrator"
+msgstr "Erzähler"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Darstellung der Oberfläche. Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste.
 #: interface_settings.lua:100 interface_settings.lua:134 navbar_settings.lua:1500
@@ -4013,11 +4349,23 @@ msgstr "Netzwerk nicht verfügbar."
 msgid "Networks with WEP encryption are not supported."
 msgstr "Netzwerke mit WEP-Verschlüsselung werden nicht unterstützt."
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:91
+msgid "Never"
+msgstr "Nie"
+
 #. Type: status
 #. Context: Statusanzeige in der Buchbibliothek. Bezeichnung im Editor für Buchmetadaten. Bezeichnung im Kontextmenü für Bücher und Ordner. Wird auch an anderen Stellen in ZenOS verwendet.
 #: metadata_editor.lua:609 browser_list_item_layout.lua:467 context_menu.lua:2454 zen_renderer.lua:828 strip_common.lua:532
 msgid "New"
 msgstr "Neu"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:596
+msgid "New card"
+msgstr "Neue Karte"
 
 #. Type: label
 #. Context: Bezeichnung im Menü für Buchsammlungen.
@@ -4090,6 +4438,12 @@ msgstr "Nächster Teil der Serie"
 #: nav_button_model.lua:27 navbar_settings.lua:188
 msgid "Next page"
 msgstr "Nächste Seite"
+
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:182
+msgid "Nickname: %1"
+msgstr "Spitzname: %1"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen.
@@ -4236,6 +4590,18 @@ msgid "No books with tags metadata found"
 msgstr "Es wurden keine Bücher mit Tag-Metadaten gefunden"
 
 #. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:420
+msgid "No cards for this book yet."
+msgstr "Noch keine Karten für dieses Buch."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:504
+msgid "No cards yet."
+msgstr "Noch keine Karten."
+
+#. Type: message
 #. Context: Hinweis in den Ansichten zur ZenOS-Aktualisierung.
 #: zen_updater.lua:213 zen_updater.lua:218 zen_updater.lua:815 zen_updater.lua:828
 msgid "No changelog provided."
@@ -4290,6 +4656,24 @@ msgid "No network connection. Please connect to Wi-Fi and try again."
 msgstr "Keine Netzwerkverbindung. Bitte mit dem WLAN verbinden und erneut versuchen."
 
 #. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:267
+msgid "No notes yet. “+ Note” adds one, with the page."
+msgstr "Noch keine Notizen. „+ Notiz“ fügt eine hinzu, mit Seite."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:618
+msgid "No pictures in this book."
+msgstr "Keine Bilder in diesem Buch."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:237
+msgid "No pins and no lexicon cards in this book yet."
+msgstr "Noch keine Pins und keine Lexikon-Karten in diesem Buch."
+
+#. Type: message
 #. Context: Hinweis auf der Startseite und in ihren Widgets.
 #: quotes.lua:48
 msgid "No quote available."
@@ -4306,6 +4690,12 @@ msgstr "Keine Lese-Engine für diese Datei oder ungültige Datei."
 #: stats_page.lua:562 stats_page.lua:974
 msgid "No reading data"
 msgstr "Keine Lesedaten"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:903
+msgid "No relations yet."
+msgstr "Noch keine Beziehungen."
 
 #. Type: dialog
 #. Context: Text eines Dialogs im Aktionsmenü für Gesten und Tastenkürzel. Hinweis in der Leseansicht.
@@ -4385,17 +4775,35 @@ msgstr "Nicht festgelegt"
 msgid "Note"
 msgstr "Notiz"
 
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:353
+msgid "Note for %1"
+msgstr "Notiz für %1"
+
 #. Type: title
 #. Context: input = require("ui/widget/inputdialog"):new{ title = (field == "text" and _("Highlighted text") or _("Note text")) .. " · " .. (mode == "include" and _("Include") or _("Exclude")), input = rule.text,
 #: annotation_viewer.lua:490 annotation_viewer.lua:540
 msgid "Note text"
 msgstr "Notiztext"
 
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:259
+msgid "Notes (%1)"
+msgstr "Notizen (%1)"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs. Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen. Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite. Wird auch an anderen Stellen in ZenOS verwendet.
 #: app_launcher_settings.lua:173 menu_settings.lua:795 home_settings.lua:1443 navbar_settings.lua:338
 msgid "Nothing"
 msgstr "Nichts"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:305
+msgid "Nothing on this card yet."
+msgstr "Auf dieser Karte steht noch nichts."
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen.
@@ -4408,6 +4816,18 @@ msgstr "Notion"
 #: quick_settings.lua:794
 msgid "NotionSync"
 msgstr "NotionSync"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:41
+msgid "Object"
+msgstr "Gegenstand"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:44
+msgid "Objects"
+msgstr "Gegenstände"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Leseansicht.
@@ -4452,6 +4872,12 @@ msgid "On Home refresh"
 msgstr "Auf Startseite aktualisieren"
 
 #. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:158 screens.lua:460
+msgid "On this page"
+msgstr "Auf dieser Seite"
+
+#. Type: label
 #. Context: Bezeichnung im Editor für Buchmetadaten.
 #: metadata_editor.lua:1105
 msgid "One per line"
@@ -4468,6 +4894,12 @@ msgstr "Nur im Zen-Modus"
 #: app_launcher_settings.lua:1022
 msgid "Only show while reading"
 msgstr "Nur beim Lesen anzeigen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:90
+msgid "Only with cards"
+msgstr "Nur mit Karten"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Darstellung der Oberfläche. Bezeichnung in der ZenOS-Oberfläche.
@@ -4601,6 +5033,30 @@ msgstr "Reihenfolge"
 msgid "Order TBR"
 msgstr "Bestellung TBR"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:41 store.lua:44
+msgid "Other"
+msgstr "Sonstiges"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:493
+msgid "Other kinds"
+msgstr "Andere Arten"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:619 screens.lua:791
+msgid "Other names (only for finding it in the text)"
+msgstr "Andere Namen (nur zum Finden im Text)"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:621 screens.lua:793
+msgid "Other names, with commas"
+msgstr "Andere Namen, mit Komma"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Lesestatistiken.
 #: stats_settings.lua:230
@@ -4637,11 +5093,29 @@ msgstr "Überlappung"
 msgid "overwrite existing files"
 msgstr "Vorhandene Dateien überschreiben"
 
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:1004
+msgid "Own picture"
+msgstr "Eigenes Bild"
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:964
+msgid "Own…"
+msgstr "Eigene…"
+
 #. Type: message
 #. Context: Hinweis in der ZenOS-Oberfläche.
 #: utils.lua:357
 msgid "p."
 msgstr "S."
+
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: pins.lua:37 store.lua:380
+msgid "p. %1"
+msgstr "S. %1"
 
 #. Type: unit
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -4758,6 +5232,12 @@ msgid "Partial pages refresh"
 msgstr "Partielle Seitenaktualisierung"
 
 #. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:68
+msgid "Partner"
+msgstr "Partner"
+
+#. Type: label
 #. Context: Bezeichnung im WLAN-Netzwerkmenü und in den Verbindungsdialogen.
 #: network_switcher.lua:606
 msgid "password (leave empty for open networks)"
@@ -4774,6 +5254,12 @@ msgstr "Das Passwort darf nicht leer sein."
 #: context_menu.lua:2055 context_menu.lua:2091
 msgid "Paste"
 msgstr "Einfügen"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:44
+msgid "People"
+msgstr "Personen"
 
 #. Type: label
 #. Context: Bezeichnung auf der Startseite und in ihren Widgets.
@@ -4794,6 +5280,12 @@ msgid "Percent"
 msgstr "Prozent"
 
 #. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:41
+msgid "Person"
+msgstr "Person"
+
+#. Type: label
 #. Context: Bezeichnung auf der Seite der Lesestatistiken.
 #: stats_page.lua:65
 msgid "Personal Records"
@@ -4810,6 +5302,42 @@ msgstr "Persönliche Rekorde"
 #: annotation_viewer.lua:494
 msgid "Phrase"
 msgstr "Phrase"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: pins.lua:36 screens.lua:629
+msgid "Picture"
+msgstr "Bild"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:783
+msgid "Picture\ntap to\nchange"
+msgstr "Bild\nantippen\nzum Ändern"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:991
+msgid "Picture for %1"
+msgstr "Bild für %1"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:668
+msgid "Picture from the book"
+msgstr "Bild aus dem Buch"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:702
+msgid "Picture from the folder"
+msgstr "Bild aus dem Ordner"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:602
+msgid "Pictures can be taken from EPUB books."
+msgstr "Bilder gibt es nur aus EPUB-Büchern."
 
 #. Type: title
 #. Context: end dialog = require("ui/widget/buttondialog"):new{ title = _("Pin"), buttons = rows } UIManager:show(dialog)
@@ -4835,11 +5363,41 @@ msgstr "Optionen für angeheftete Seiten"
 msgid "Pinned pages"
 msgstr "Angeheftete Seiten"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:89
+msgid "Pins"
+msgstr "Pins"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:362 corner.lua:382
+msgid "Pins & lexicon"
+msgstr "Pins & Lexikon"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:110
+msgid "Pins & Lexicon window"
+msgstr "Fenster Pins & Lexikon"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:41
+msgid "Place"
+msgstr "Ort"
+
 #. Type: message
 #. Context: Hinweis in den Einstellungen zu Extras und Integrationen.
 #: extras_settings.lua:285
 msgid "Place pack folders or ZIP files in /koreader/icons/zen. ZIP files are installed automatically."
 msgstr "Platzieren Sie Pack-Ordner oder ZIP-Dateien in /koreader/icons/zen. ZIP-Dateien werden automatisch installiert."
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:44
+msgid "Places"
+msgstr "Orte"
 
 #. Type: message
 #. Context: Hinweis in den Warnungen zu inkompatiblen Plugins.
@@ -4991,6 +5549,18 @@ msgstr "Herausgeber"
 msgid "Purple"
 msgstr "Lila"
 
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:1009
+msgid "Put a JPG or PNG on the PC into %1 – then choose it here."
+msgstr "Ein JPG oder PNG am PC nach %1 legen – dann hier auswählen."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:697
+msgid "Put pictures (JPG/PNG) into the lexicon folder on the PC:\n"
+msgstr "Bilder (JPG/PNG) am PC in den Lexikon-Ordner legen:\n"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen.
 #: quick_settings.lua:1047
@@ -5034,6 +5604,12 @@ msgid "Quit KOReader"
 msgstr "KOReader verlassen"
 
 #. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:1031
+msgid "Quote"
+msgstr "Zitat"
+
+#. Type: title
 #. Context: Überschrift in den Einstellungen zu Aufbau und Widgets der Startseite.
 #: home_settings.lua:2572
 msgid "Quote font size"
@@ -5044,6 +5620,18 @@ msgstr "Schriftgröße des Zitats"
 #: home_settings.lua:2490
 msgid "Quote sources"
 msgstr "Zitatquellen"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:566
+msgid "Quote to which card?"
+msgstr "Zitat zu welcher Karte?"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:118
+msgid "Quote · %1"
+msgstr "Zitat · %1"
 
 #. Type: label
 #. Context: Bezeichnung auf der Startseite und in ihren Widgets.
@@ -5080,6 +5668,12 @@ msgstr "RAM-Auslastung"
 #: stats_page.lua:1438 stats_settings.lua:89
 msgid "Range"
 msgstr "Reichweite"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:627 screens.lua:868
+msgid "Rank: Commissar\nProfession: Hero"
+msgstr "Rang: Kommissar\nBeruf: Held"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
@@ -5255,6 +5849,30 @@ msgstr "Aktualisieren"
 msgid "regular"
 msgstr "normal"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:833
+msgid "Relation"
+msgstr "Beziehung"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: controller.lua:123 screens.lua:307
+msgid "Relation types"
+msgstr "Beziehungsarten"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:247
+msgid "Relations"
+msgstr "Beziehungen"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:927
+msgid "Relations (%1)"
+msgstr "Beziehungen (%1)"
+
 #. Type: error
 #. Context: Fehlermeldung in den Ansichten zur ZenOS-Aktualisierung.
 #: zen_updater.lua:743
@@ -5302,6 +5920,12 @@ msgstr "Aus Verlauf entfernen"
 #: dict_quick_lookup.lua:120
 msgid "Remove from vocabulary builder"
 msgstr "Aus dem Vokabelgenerator entfernen"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:1012
+msgid "Remove picture"
+msgstr "Bild entfernen"
 
 #. Type: action
 #. Context: end add{ text = _("Remove pin"), callback = function() References.setPin(self.ui, self.page, true)
@@ -5404,6 +6028,12 @@ msgstr "Auf Standardeinstellungen zurücksetzen"
 #: menu_settings.lua:1328 home_settings.lua:1793
 msgid "Reset to defaults"
 msgstr "Auf Standardwerte zurücksetzen"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:366
+msgid "Reset to the standard list"
+msgstr "Standardliste"
 
 #. Type: button
 #. Context: Beschriftung einer Schaltfläche im Bereich der Schnelleinstellungen. Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen.
@@ -5525,6 +6155,18 @@ msgstr "Rechts"
 msgid "Right items"
 msgstr "Rechte Elemente"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:735 screens.lua:808 screens.lua:822
+msgid "Role"
+msgstr "Rolle"
+
+#. Type: format
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:92
+msgid "Role: %1"
+msgstr "Rolle: %1"
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu den Schaltflächen der Schnelleinstellungen. Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen.
 #: quick_settings.lua:660 menu_settings.lua:94 menu_settings.lua:661 menu_settings.lua:663 menu_settings.lua:1203
@@ -5560,6 +6202,12 @@ msgstr "RSS-Reader-Plugin ist nicht installiert."
 #: metadata_editor.lua:662 metadata_editor.lua:927 metadata_editor.lua:1045 metadata_editor.lua:1242 book_note.lua:105 global_settings.lua:307 reader_settings.lua:1230 home_settings.lua:2137 metadata_settings.lua:43
 msgid "Save"
 msgstr "Speichern"
+
+#. Type: action
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:673
+msgid "Save & next"
+msgstr "Speichern & weiter"
 
 #. Type: action
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -6197,6 +6845,12 @@ msgstr "Zen-Icon anzeigen - weißer Hintergrund"
 msgid "Show Zen Settings in Controls"
 msgstr "Zen-Einstellungen in den Steuerelementen anzeigen"
 
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:1002
+msgid "Shows the larger pictures inside the book; tap one, look at it, take it."
+msgstr "Zeigt die größeren Bilder im Buch; eins antippen, ansehen, übernehmen."
+
 #. Type: label
 #. Context: Bezeichnung im Bluetooth-Gerätemenü und in den Kopplungsdialogen. Bezeichnung im WLAN-Netzwerkmenü und in den Verbindungsdialogen.
 #: bluetooth_switcher.lua:120 network_switcher.lua:623
@@ -6497,11 +7151,23 @@ msgstr "Absenden"
 msgid "Submitting report…"
 msgstr "Bericht wird gesendet…"
 
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:460
+msgid "Suggested"
+msgstr "Vorschläge"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Lesestatistiken.
 #: stats_settings.lua:360
 msgid "Sunday"
 msgstr "Sonntag"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:695
+msgid "Supporting"
+msgstr "Nebenfigur"
 
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
@@ -6581,11 +7247,23 @@ msgstr "Tags"
 msgid "Tailscale"
 msgstr "Tailscale"
 
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:372
+msgid "Tap a name to rename it. ↑ only changes the order in the choices."
+msgstr "Namen antippen zum Umbenennen. ↑ ändert nur die Reihenfolge in der Auswahl."
+
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
 #: quickstart_pages.lua:703
 msgid "Tap and hold any book or folder in your library to reveal details."
 msgstr "Tippen und halten Sie ein beliebiges Buch oder einen Ordner in Ihrer Bibliothek, um Details anzuzeigen."
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:357
+msgid "Teacher of | Student of"
+msgstr "Lehrer von | Schüler von"
 
 #. Type: action
 #. Context: end rows[#rows + 1] = {{ text = _("Text"), callback = launch(function() local text_dialog, text_rows = nil, {}
@@ -6616,6 +7294,12 @@ msgstr "Textstile"
 #: quickstart_pages.lua:843
 msgid "The best interface is the one you forget is there.\nNow go get lost in a good book."
 msgstr "Die beste Benutzeroberfläche ist die, die man vergisst.\nUnd jetzt viel Spaß beim Eintauchen in ein gutes Buch."
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:571
+msgid "The card needs a name."
+msgstr "Die Karte braucht einen Namen."
 
 #. Type: error
 #. Context: Fehlermeldung im Editor für Buchmetadaten.
@@ -6659,11 +7343,29 @@ msgstr "Der Schlüssel wird lokal als Klartext gespeichert und niemals protokoll
 msgid "The KOReader metadata override could not be saved."
 msgstr "Die KOReader-Metadatenüberschreibung konnte nicht gespeichert werden."
 
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: store.lua:347
+msgid "The lexicon file was changed elsewhere. Open the lexicon again to see that version."
+msgstr "Die Lexikon-Datei wurde woanders geändert. Öffne das Lexikon noch einmal, um diese Fassung zu sehen."
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:640
+msgid "the new card"
+msgstr "die neue Karte"
+
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
 #: quickstart_pages.lua:868
 msgid "The place for all your books %1"
 msgstr "Der Ort für alle Ihre Bücher %1"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:543
+msgid "The word on the page was “%1” – the card is called %2; all forms are found by themselves."
+msgstr "Im Text stand „%1“ – die Karte heißt %2; alle Formen werden von selbst gefunden."
 
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu Darstellung und Verhalten der Leseansicht.
@@ -6682,6 +7384,12 @@ msgstr "Designname"
 #: reader_controls.lua:559 buttons.lua:39
 msgid "Themes"
 msgstr "Themen"
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:576
+msgid "There is already a card %1."
+msgstr "Es gibt schon eine Karte %1."
 
 #. Type: dialog
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -6766,6 +7474,12 @@ msgstr "Diesen Monat"
 #: library_settings.lua:1332
 msgid "This option is disabled when a home folder is the device storage root. Set home folders to narrower books folders first."
 msgstr "Diese Option ist deaktiviert, wenn der Stammordner des Gerätes als Startordner festgelegt ist. Legen Sie zuerst spezifischere Bücherordner als Startordner fest."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:635
+msgid "This picture cannot be shown."
+msgstr "Dieses Bild kann nicht angezeigt werden."
 
 #. Type: dialog
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -7337,6 +8051,12 @@ msgstr "Verwendung"
 msgid "USB"
 msgstr "USB"
 
+#. Type: button
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:647
+msgid "Use"
+msgstr "Nehmen"
+
 #. Type: dialog
 #. Context: Text eines Dialogs in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:1067
@@ -7396,6 +8116,18 @@ msgstr "Startordner verwenden"
 #: navbar_settings.lua:1118
 msgid "Use last folder"
 msgstr "Letzten Ordner verwenden"
+
+#. Type: dialog
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:646
+msgid "Use this picture for %1?"
+msgstr "Dieses Bild für %1 verwenden?"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:641
+msgid "Use this picture? Close to decide."
+msgstr "Dieses Bild nehmen? Schließen zum Entscheiden."
 
 #. Type: message
 #. Context: Hinweis in den Einstellungen zu zeitgesteuerten Geräteaktionen und zum Ruhebildschirm.
@@ -7504,6 +8236,12 @@ msgstr "Willkommen bei ZenOS"
 #: quickstart_pages.lua:754
 msgid "What should your device show when it goes to sleep?"
 msgstr "Was soll Ihr Gerät anzeigen, wenn es in den Ruhezustand wechselt?"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:636 ui.lua:353
+msgid "What you want to remember"
+msgstr "Was du dir merken willst"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Ansichten zur ZenOS-Aktualisierung.
@@ -7864,3 +8602,45 @@ msgstr "ZenPM"
 #: zenpm_installer.lua:381
 msgid "ZenPM has been installed. Restart KOReader to use it."
 msgstr "ZenPM wurde installiert. Starten Sie KOReader neu, um es zu verwenden."
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:650
+msgid "“%1” is another name of …"
+msgstr "„%1“ ist ein anderer Name von …"
+
+#. Type: title
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: ui.lua:463
+msgid "“%1” · %2 cards"
+msgstr "„%1“ · %2 Karten"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:337
+msgid "‹ Back"
+msgstr "‹ Zurück"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:413
+msgid "‹ Lexicon"
+msgstr "‹ Lexikon"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:375
+msgid "‹ List"
+msgstr "‹ Liste"
+
+#. Type: label
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: corner.lua:326
+msgid "‹ Pins & lexicon"
+msgstr "‹ Pins & Lexikon"
+
+#. Type: message
+#. Context: Text im Buch-Lexikon (Karten zu Personen, Orten und mehr pro Buch).
+#: screens.lua:910
+msgid "✕ removes the relation on both cards."
+msgstr "✕ entfernt die Beziehung auf beiden Karten."

@@ -17,6 +17,7 @@ local PATCH_MODULES = {
     bookmarks = "modules/reader/patches/bookmarks",
     page_browser = "modules/reader/patches/page_browser",
     reader_references = "modules/reader/patches/reader_references",
+    book_lexicon = "modules/reader/patches/book_lexicon",
     stable_page_statistics = "modules/reader/patches/stable_page_statistics",
     highlight_names = "modules/reader/patches/highlight_names",
     night_highlights = "modules/reader/patches/night_highlights",
@@ -66,6 +67,7 @@ local BOOT_FEATURES = {
 -- ReaderUI-only; applied when KOReader first requires ReaderUI.
 local READER_FEATURES = {
     "reader_references",
+    "book_lexicon", -- self-disables when feature is off
     -- Route KOReader's File browser gesture through the same transition as ZenOS.
     "library_navigation",
     "page_browser", -- self-disables when feature is off

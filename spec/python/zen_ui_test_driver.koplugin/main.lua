@@ -2435,6 +2435,9 @@ function Driver:handleCommand(command)
     if kind == "reference_action" then
         return require("reader_tools").reference_action(params)
     end
+    if kind == "lexicon_action" then
+        return require("reader_tools").lexicon_action(params)
+    end
     if kind == "annotation_viewer_action" then
         local ok, err = require("reader_tools").annotation_viewer_action(params)
         return { ok = ok == true, error = err }

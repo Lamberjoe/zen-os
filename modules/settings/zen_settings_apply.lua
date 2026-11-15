@@ -294,6 +294,12 @@ function M.apply_feature_toggle(plugin, feature, enabled)
         local reader = require("apps/reader/readerui").instance
         if enabled then references.applyDefaults(reader) else references.clear(reader) end
     end
+    if feature == "book_lexicon" then
+        -- The open book gets (or drops) its lexicon box right away.
+        local ReaderUI = package.loaded["apps/reader/readerui"]
+        local reader = ReaderUI and ReaderUI.instance
+        if reader then require("modules/reader/lexicon/controller").attach(reader) end
+    end
     if feature == "reader_top_status_bar" and enabled then
         require("common/reader_status_bar").disableKoreaderAltStatusBar()
     end

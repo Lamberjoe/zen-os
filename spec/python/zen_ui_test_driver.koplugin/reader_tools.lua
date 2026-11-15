@@ -1754,4 +1754,51 @@ function M.reference_action(params)
     } }
 end
 
+--- Book lexicon: state of the controller, the status bar box and its windows.
+function M.lexicon_action(params)
+    local ui = reader()
+    if not ui then return { ok = false, error = "no reader" } end
+    local S = require("modules/reader/lexicon/store")
+    local action = params.action
+    local function top(name)
+        return find_widget(function(widget) return widget.name == name end)
+    end
+    if action == "tap_box" then
+        local box = ui.view.footer._zen_box_dimens and ui.view.footer._zen_box_dimens.lexicon
+        if not box then return { ok = false, error = "lexicon box missing" } end
+        local pos = require("ui/geometry"):new{ x = box.x + box.w / 2, y = box.y + box.h / 2 }
+        ui:handleEvent(require("ui/event"):new("Gesture", { ges = "tap", pos = pos }))
+    elseif action == "lookup" then
+        ui.dictionary:onLookupWord(params.word)
+    elseif action == "new_card" then
+        require("modules/reader/lexicon/screens").newCardPage(ui, { name = params.name or "Test" })
+    elseif action == "swipe" then
+        local page = top("zen_lexicon_page")
+        if not page then return { ok = false, error = "no lexicon page" } end
+        local pos = require("ui/geometry"):new{ x = ui.dimen.w / 2, y = params.y or ui.dimen.h / 2 }
+        page:handleEvent(require("ui/event"):new("Gesture",
+            { ges = "swipe", direction = params.direction, distance = 200, pos = pos }))
+    elseif action == "close" then
+        local widget = top("zen_lexicon_card") or top("zen_lexicon_corner") or top("zen_lexicon_page")
+        if widget then UIManager:close(widget) end
+        if ui.menu.menu_container then ui.menu.menu_container[1]:closeMenu() end
+    elseif action ~= "state" then
+        return { ok = false, error = "unknown action" }
+    end
+    UIManager:forceRePaint()
+    local box = ui.view.footer._zen_box_dimens and ui.view.footer._zen_box_dimens.lexicon
+    local card = top("zen_lexicon_card")
+    return { ok = true, lexicon = {
+        enabled = S.enabled(),
+        registered = ui.zen_lexicon ~= nil,
+        cards = #S.bookCards(ui),
+        box = box and { x = box.x, y = box.y, w = box.w, h = box.h } or nil,
+        corner = top("zen_lexicon_corner") ~= nil,
+        card = card and card.title or nil,
+        page = top("zen_lexicon_page") ~= nil,
+        book_page = ui:getCurrentPage(),
+        menu = ui.menu.menu_container ~= nil,
+    } }
+end
+
 return M

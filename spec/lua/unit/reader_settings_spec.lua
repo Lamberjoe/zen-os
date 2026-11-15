@@ -112,8 +112,8 @@ describe("reader settings", function()
         local labels = {}
         for _i, item in ipairs(items) do labels[#labels + 1] = item.text end
         assert.are.same({ "Appearance", "Highlight / Lookup", "Bottom swipe gesture", "Page Browser",
-            "Table of contents", "Footnotes and pinned pages", "Annotation viewer", "Restore library location on exit",
-            "Reader controls", "End of book" }, labels)
+            "Table of contents", "Footnotes and pinned pages", "Lexicon", "Annotation viewer",
+            "Restore library location on exit", "Reader controls", "End of book" }, labels)
         assert.are.equal("toc", items[5].icon_name)
         assert.are.equal("Show chapter page counts", items[5].sub_item_table[1].text)
         assert.is_false(items[5].sub_item_table[1].checked_func())

@@ -25,34 +25,96 @@ local function controlSize(size)
     return Screen:scaleBySize(size * (Device:hasColorScreen() and 1 or MONO_SCALE))
 end
 
+-- Boxes at the right end of the status bar, left to right. The pin box comes first;
+-- other features add theirs with M.addBox (e.g. the book lexicon).
+-- A box: { id, icon, visible = function(footer), count = function(footer) -> number|nil,
+--          tap = function(ui), hold = function(ui) }
+local pin_box = {
+    id = "pin",
+    icon = "pin",
+    visible = function(footer)
+        if footer.settings.pinned_pages == false then return false end
+        if not References.enabled(footer.ui) then return false end
+        return #References.pinLocations(footer.ui) > (footer.view.footer_visible and 0 or 1)
+    end,
+    count = function(footer) return #References.pinLocations(footer.ui) end,
+}
+local boxes = { pin_box }
+
+--- Add a box right of the existing ones (once per id).
+function M.addBox(box)
+    for _i, b in ipairs(boxes) do
+        if b.id == box.id then return end
+    end
+    boxes[#boxes + 1] = box
+end
+
+local function visible_boxes(footer)
+    local out = {}
+    for _i, box in ipairs(boxes) do
+        if box.visible(footer) then out[#out + 1] = box end
+    end
+    return out
+end
+
+--- The icon and number of a box, rebuilt only when the number or the status bar font changes.
+local function label(footer, box)
+    local cache = footer._zen_box_labels
+    if not cache then
+        cache = {}
+        footer._zen_box_labels = cache
+    end
+    local count = box.count(footer)
+    local face = footer.footer_text_face or Font:getFace("cfont", footer.settings.text_font_size)
+    local bold = footer.settings.text_font_bold
+    local entry = cache[box.id]
+    if not entry or entry.count ~= count or entry.face ~= face or entry.bold ~= bold then
+        if entry then entry.widget:free() end
+        local size = controlSize(16)
+        local widget = HorizontalGroup:new{ allow_mirroring = false,
+            ColorIconWidget:new{ icon = utils.resolveLocalIcon(icons_dir, box.icon),
+                width = size, height = size, alpha = true },
+        }
+        if count then
+            widget[2] = HorizontalSpan:new{ width = controlSize(3) }
+            widget[3] = ColorTextWidget:new{ text = tostring(count), face = face,
+                bold = bold, padding = 0, invert_night_mode = false }
+            ButtonLabels.alignIcon(widget[1], widget[3])
+        end
+        entry = { widget = widget, count = count, face = face, bold = bold,
+            height = widget:getSize().h + 2 * controlSize(3) }
+        cache[box.id] = entry
+        if box == pin_box then footer._zen_pin_label = widget end
+    end
+    return entry
+end
+
+local function box_gap() return controlSize(6) end
+
+--- Width of all visible boxes with the gaps between them (0 without boxes); also the common height.
+local function row(footer)
+    local width, height, shown = 0, 0, visible_boxes(footer)
+    for i, box in ipairs(shown) do
+        local entry = label(footer, box)
+        width = width + entry.widget:getSize().w + 2 * controlSize(9) + (i > 1 and box_gap() or 0)
+        height = math.max(height, entry.height)
+    end
+    footer._zen_pin_height = height
+    return width, shown
+end
+
 function M.visible(footer)
-    if footer.settings.pinned_pages == false then return false end
-    if not References.enabled(footer.ui) then return false end
-    return #References.pinLocations(footer.ui) > (footer.view.footer_visible and 0 or 1)
+    for _i, box in ipairs(boxes) do
+        if box.visible(footer) then return true end
+    end
+    return false
 end
 
 function M.width(footer)
-    if not M.visible(footer) then return 0 end
-    local count = #References.pinLocations(footer.ui)
-    local face = footer.footer_text_face or Font:getFace("cfont", footer.settings.text_font_size)
-    if footer._zen_pin_count ~= count or footer._zen_pin_face ~= face
-            or footer._zen_pin_bold ~= footer.settings.text_font_bold then
-        if footer._zen_pin_label then footer._zen_pin_label:free() end
-        local size = controlSize(16)
-        footer._zen_pin_label = HorizontalGroup:new{ allow_mirroring = false,
-            ColorIconWidget:new{ icon = utils.resolveLocalIcon(icons_dir, "pin"),
-                width = size, height = size, alpha = true },
-            HorizontalSpan:new{ width = controlSize(3) },
-            ColorTextWidget:new{ text = tostring(count), face = face,
-                bold = footer.settings.text_font_bold, padding = 0, invert_night_mode = false },
-        }
-        ButtonLabels.alignIcon(footer._zen_pin_label[1], footer._zen_pin_label[3])
-        footer._zen_pin_height = footer._zen_pin_label:getSize().h + 2 * controlSize(3)
-        footer._zen_pin_count, footer._zen_pin_face = count, face
-        footer._zen_pin_bold = footer.settings.text_font_bold
-    end
+    local width = row(footer)
+    if width == 0 then return 0 end
     -- Leave room for the footer container's centering margin.
-    return footer._zen_pin_label:getSize().w + controlSize(22) + footer.horizontal_margin
+    return width + controlSize(4) + footer.horizontal_margin
 end
 
 function M.height(footer)
@@ -75,7 +137,7 @@ local function inside_right(footer)
 end
 
 local function box_width(footer)
-    return footer._zen_pin_label:getSize().w + 2 * controlSize(9)
+    return (row(footer))
 end
 
 -- Bare alongside bar: end it a short gap before the box instead of a margin plus reservation.
@@ -87,24 +149,31 @@ local function reserved_width(footer, width)
 end
 
 local function paint_label(footer, bb, right, y, height, background)
-    local width = M.width(footer)
-    if width == 0 then return end
-    local label = footer._zen_pin_label
+    footer._zen_box_dimens = {}
+    local row_width, shown = row(footer)
+    if row_width == 0 then return end
     local color = ReaderThemes.getTextColor(plugin)
         or footer.footer_text and footer.footer_text.fgcolor or Blitbuffer.COLOR_BLACK
-    label[1].fgcolor, label[3].fgcolor = color, color
-    local size = label:getSize()
     y = y + math.floor((height - footer._zen_pin_height) / 2)
     height = footer._zen_pin_height
     y = math.min(y, Screen:getHeight() - math.max(footer.bottom_padding, Screen:scaleBySize(1)) - height)
     local padding = controlSize(9)
-    local box_w = box_width(footer)
-    local left = right - box_w
-    if background then bb:paintRect(left, y, box_w, height, background) end
-    bb:paintBorder(left, y, box_w, height, controlSize(1), color,
-        controlSize(7), G_reader_settings:nilOrTrue("anti_alias_ui"))
-    label:paintTo(bb, left + padding, y + math.floor((height - size.h) / 2))
-    footer._zen_pin_dimen = Geom:new{ x = left, y = y, w = box_w, h = height }
+    local left = right - row_width
+    for _i, box in ipairs(shown) do
+        local widget = label(footer, box).widget
+        widget[1].fgcolor = color
+        if widget[3] then widget[3].fgcolor = color end
+        local size = widget:getSize()
+        local box_w = size.w + 2 * padding
+        if background then bb:paintRect(left, y, box_w, height, background) end
+        bb:paintBorder(left, y, box_w, height, controlSize(1), color,
+            controlSize(7), G_reader_settings:nilOrTrue("anti_alias_ui"))
+        widget:paintTo(bb, left + padding, y + math.floor((height - size.h) / 2))
+        local dimen = Geom:new{ x = left, y = y, w = box_w, h = height }
+        footer._zen_box_dimens[box.id] = dimen
+        if box == pin_box then footer._zen_pin_dimen = dimen end
+        left = left + box_w + box_gap()
+    end
 end
 
 function M.apply()
@@ -175,7 +244,7 @@ function M.apply()
     end
     local paint = Footer.paintTo
     Footer.paintTo = function(self, bb, x, y)
-        self._zen_pin_dimen = nil
+        self._zen_pin_dimen, self._zen_box_dimens = nil, nil
         local height = self:getHeight()
         if self.footer_content and self.footer_content.dimen then self.footer_content.dimen.h = height end
         local result = paint(self, bb, x, y)
@@ -187,7 +256,8 @@ function M.apply()
     end
     local close = Footer.onCloseWidget
     Footer.onCloseWidget = function(self, ...)
-        if self._zen_pin_label then self._zen_pin_label:free(); self._zen_pin_label = nil end
+        for _id, entry in pairs(self._zen_box_labels or {}) do entry.widget:free() end
+        self._zen_box_labels, self._zen_pin_label = nil, nil
         return close(self, ...)
     end
     local View = require("apps/reader/modules/readerview")
@@ -197,7 +267,7 @@ function M.apply()
         if bb ~= Screen.bb then return end
         if self.footer_visible then return end
         local footer = self.footer
-        footer._zen_pin_dimen = nil
+        footer._zen_pin_dimen, footer._zen_box_dimens = nil, nil
         if not M.visible(footer) then return end
         local right = select(2, ReaderStatusBar.getHorizontalMargins(self.ui.document, footer.horizontal_margin, plugin))
         if inside_right(footer) and footer._zen_pin_right_inset then
@@ -221,12 +291,18 @@ function M.attach(ui)
     for id, zone in pairs(ui._zones or {}) do
         if zone.def.ges == "tap" or zone.def.ges == "hold" then overrides[#overrides + 1] = id end
     end
+    -- The box under the finger (with a little slack around it), or nil.
     local function hit(ges)
         local footer = ui.view.footer
-        local box = footer._zen_pin_dimen
-        return M.visible(footer) and box
-            and ges.pos.x >= box.x - box.w * 0.1 and ges.pos.x < box.x + box.w * 1.1
-            and ges.pos.y >= box.y - box.h * 0.1 and ges.pos.y < box.y + box.h * 1.1
+        local dimens = footer._zen_box_dimens
+        if not (dimens and M.visible(footer)) then return end
+        for _i, box in ipairs(boxes) do
+            local d = dimens[box.id]
+            if d and ges.pos.x >= d.x - d.w * 0.1 and ges.pos.x < d.x + d.w * 1.1
+                    and ges.pos.y >= d.y - d.h * 0.1 and ges.pos.y < d.y + d.h * 1.1 then
+                return box
+            end
+        end
     end
     local function menu()
         local dialog
@@ -242,8 +318,12 @@ function M.attach(ui)
         zones[#zones + 1] = { id = "zen_pin_" .. gesture, ges = gesture,
             screen_zone = { ratio_x = 0, ratio_y = 0, ratio_w = 1, ratio_h = 1 }, overrides = overrides,
             handler = function(ges)
-                if not hit(ges) then return false end
-                if gesture == "hold" or not References.pinnedPage(ui) then menu()
+                local box = hit(ges)
+                if not box then return false end
+                if box ~= pin_box then
+                    local action = box[gesture] or box.tap
+                    action(ui)
+                elseif gesture == "hold" or not References.pinnedPage(ui) then menu()
                 else References.openPinned(ui) end
                 return true
             end,

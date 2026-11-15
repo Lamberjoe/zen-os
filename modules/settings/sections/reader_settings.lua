@@ -1685,6 +1685,20 @@ function M.build(ctx)
         },
     })
 
+    table.insert(items, {
+        text = _("Lexicon"),
+        icon_name = "lexicon",
+        sub_item_table = {
+            make_enable_feature_item("book_lexicon", _("Book lexicon")),
+            {
+                text = _("Relation types"),
+                enabled_func = function() return config.features.book_lexicon == true end,
+                keep_menu_open = true,
+                callback = function() require("modules/reader/lexicon/screens").relationTypes() end,
+            },
+        },
+    })
+
     table.insert(items, require("modules/settings/sections/annotation_settings").build(ctx))
 
     table.insert(items, IconItem.decorate({

@@ -116,6 +116,32 @@ describe("bottom status-bar pin control", function()
         end
     end)
 
+    it("places an added box right of the pin box and gives the status bar room for both", function()
+        local bb = { paintBorder = function() end }
+        local shown = true
+        PinFooter.addBox{ id = "extra", icon = "lexicon", visible = function() return shown end,
+            count = function() return nil end }
+        PinFooter.addBox{ id = "extra", icon = "other", visible = function() return true end,
+            count = function() return 1 end }
+        local footer = setmetatable({
+            settings = {}, ui = {}, view = { footer_visible = true },
+            height = 14, horizontal_margin = 10, bottom_padding = 1, footer_text_face = { size = 14 },
+        }, { __index = Footer })
+        footer:updateFooterContainer()
+        local both = PinFooter.width(footer)
+        footer.footer_container:paintTo(bb, 0, 100)
+        local pin, extra = footer._zen_box_dimens.pin, footer._zen_box_dimens.extra
+        assert.equals(footer._zen_pin_dimen, pin)
+        assert.equals(pin.x + pin.w + 6, extra.x)
+        assert.equals(pin.y, extra.y)
+        assert.equals(pin.h, extra.h)
+        -- the icon alone, without a number
+        assert.equals(16 + 2 * 9, extra.w)
+        assert.equals(both - 10 - 4, extra.x + extra.w - pin.x)
+        shown = false
+        assert.equals(pin.w + 4 + 10, PinFooter.width(footer))
+    end)
+
     it("keeps monochrome icons compact while matching the footer font and fitting on screen", function()
         color_screen = false
         local bb = { paintBorder = function() end }

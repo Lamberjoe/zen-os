@@ -127,6 +127,7 @@ local defaults = {
         brightness_schedule = false,
         page_browser        = true,
         reader_references   = true,
+        book_lexicon        = true,
         restore_library_view = false,
         highlight_lookup     = true,
         dict_quick_lookup    = true,
