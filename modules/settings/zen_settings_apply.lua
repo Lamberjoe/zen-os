@@ -294,6 +294,14 @@ function M.apply_feature_toggle(plugin, feature, enabled)
         local reader = require("apps/reader/readerui").instance
         if enabled then references.applyDefaults(reader) else references.clear(reader) end
     end
+    if feature == "thoughtful_reading" and enabled then
+        -- Give the open library and book their controller right away.
+        local TR = require("modules/reader/thoughtful_reading/controller")
+        for _i, name in ipairs({ "apps/filemanager/filemanager", "apps/reader/readerui" }) do
+            local UI = package.loaded[name]
+            if UI and UI.instance then TR.attach(UI.instance, plugin) end
+        end
+    end
     if feature == "reader_top_status_bar" and enabled then
         require("common/reader_status_bar").disableKoreaderAltStatusBar()
     end

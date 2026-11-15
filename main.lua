@@ -222,6 +222,8 @@ function ZenUI:init()
     -- Migrations already ran at module load; instances share the live config.
     self.config = ConfigManager.get() or ConfigManager.load()
     require("modules/reader/book_note").install()
+    -- Thoughtful Reading: book club questions, in the library and the reader.
+    require("modules/reader/thoughtful_reading/controller").attach(self.ui, self)
     BatteryStats.start()
     _G.__ZEN_UI_LIBRARY_FONT_CFG = self.config and self.config.library_font or nil
     _zen_plugin_ref = self

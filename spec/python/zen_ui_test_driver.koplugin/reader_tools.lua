@@ -1754,4 +1754,32 @@ function M.reference_action(params)
     } }
 end
 
+--- Thoughtful Reading: the controllers of the library and the reader, and its question card.
+function M.thoughtful_reading_action(params)
+    local FileManager = package.loaded["apps/filemanager/filemanager"]
+    local ui = reader()
+    local action = params.action
+    local function top(name)
+        return find_widget(function(widget) return widget.name == name end)
+    end
+    if action == "ask" then
+        if not (ui and ui.thoughtful_reading) then return { ok = false, error = "no controller" } end
+        ui.thoughtful_reading:askNow()
+    elseif action == "close" then
+        local widget = top("thoughtful_reading_card") or top("thoughtful_reading_page")
+        if widget then UIManager:close(widget) end
+    elseif action ~= "state" then
+        return { ok = false, error = "unknown action" }
+    end
+    UIManager:forceRePaint()
+    local TR = require("modules/reader/thoughtful_reading/controller")
+    local library = FileManager and FileManager.instance
+    return { ok = true, thoughtful_reading = {
+        enabled = TR.enabled(),
+        reader = ui and ui.thoughtful_reading ~= nil or false,
+        library = library and library.thoughtful_reading ~= nil or false,
+        card = top("thoughtful_reading_card") ~= nil,
+    } }
+end
+
 return M

@@ -1685,6 +1685,11 @@ function M.build(ctx)
         },
     })
 
+    local thoughtful_reading = make_enable_feature_item("thoughtful_reading", _("Thoughtful Reading"))
+    thoughtful_reading.icon_name = "thoughtful_reading"
+    thoughtful_reading.help_text = _("Book club questions at the end of chapters, offline. Answer in a few words or attach a highlight; all answers can be exported.")
+    table.insert(items, thoughtful_reading)
+
     table.insert(items, require("modules/settings/sections/annotation_settings").build(ctx))
 
     table.insert(items, IconItem.decorate({

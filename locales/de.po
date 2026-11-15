@@ -30,6 +30,18 @@ msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:840
+msgid "%1 answers"
+msgstr "%1 Antworten"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1233
+msgid "%1 books"
+msgstr "%1 Bücher"
+
+#. Type: format
 #. Context: Text mit eingesetzten Werten im Kontextmenü für Bücher und Ordner.
 #: context_menu.lua:641
 msgid "%1 files"
@@ -179,6 +191,18 @@ msgstr "(keine)"
 msgid "(standard)"
 msgstr "(Standard)"
 
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:576
+msgid "+ Highlight"
+msgstr "+ Markierung"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:952
+msgid "+ New"
+msgstr "+ Neu"
+
 #. Type: subtitle
 #. Context: Untertitel in den Bibliotheksgruppen nach Autoren, Reihen und Schlagwörtern.
 #: group_view.lua:1426
@@ -311,6 +335,12 @@ msgstr "Ein Metadatenanbieter hat die API-Zugangsdaten abgelehnt. Metadateneinst
 msgid "A metadata provider returned an unreadable response."
 msgstr "Ein Metadatenanbieter hat eine unlesbare Antwort zurückgegeben."
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1123
+msgid "A part of the tag is enough: \"fantasy\" also matches \"Dark Fantasy\"."
+msgstr "Ein Teil des Tags genügt: „fantasy“ passt auch zu „Dark Fantasy“."
+
 #. Type: description
 #. Context: Hilfetext im Formular für Fehlerberichte.
 #: zen_bugreporter.lua:253
@@ -352,6 +382,12 @@ msgstr "Aktiver Tab"
 #: app_launcher_settings.lua:300 app_launcher_settings.lua:984 menu_settings.lua:708 home_settings.lua:1620 navbar_settings.lua:1435
 msgid "Add"
 msgstr "Hinzufügen"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:628
+msgid "Add a highlight"
+msgstr "Markierung anhängen"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs.
@@ -491,6 +527,24 @@ msgstr "Alle"
 msgid "All books"
 msgstr "Alle Bücher"
 
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1244
+msgid "All books  (%1)"
+msgstr "Alle Bücher  (%1)"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1114
+msgid "All novels"
+msgstr "Alle Romane"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:942
+msgid "all novels"
+msgstr "alle Romane"
+
 #. Type: description
 #. Context: Hilfetext in der Einrichtungsanleitung.
 #: quickstart_pages.lua:835
@@ -562,6 +616,24 @@ msgstr "Anmerkungsanzeige"
 #: dispatch_action.lua:508 annotation_viewer.lua:28 annotation_viewer.lua:594 book_details.lua:386 page_browser_tabs.lua:49 library_settings.lua:47 home_settings.lua:2487
 msgid "Annotations"
 msgstr "Anmerkungen"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:512 controller.lua:588
+msgid "Answer"
+msgstr "Antwort"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:502
+msgid "answered"
+msgstr "beantwortet"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1099
+msgid "Any chapter"
+msgstr "Jedes Kapitel"
 
 #. Type: action
 #. Context: { { text = ({ all = _("All words"), any = _("Any word"), phrase = _("Phrase") })[rule.mode], callback = function() rule.mode = ({ all = "any", any = "phrase", phrase = "all" })[rule.mode]
@@ -664,6 +736,24 @@ msgstr "Rechte Elemente anordnen"
 #: group_view.lua:931
 msgid "Ascending"
 msgstr "Aufsteigend"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1247
+msgid "Ask me now"
+msgstr "Jetzt fragen"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:412
+msgid "At %1 you wrote about %2. Was your opinion confirmed, or did it change?"
+msgstr "Bei %1 hast du über %2 geschrieben. Hat sich deine Meinung bestätigt oder geändert?"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:52
+msgid "At every chapter end"
+msgstr "An jedem Kapitelende"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste.
@@ -827,6 +917,12 @@ msgstr "Akkustatistiken"
 msgid "Before reporting, please disable other plugins and patches to see if this is actually a ZenOS issue."
 msgstr "Bevor Sie einen Bericht einreichen, deaktivieren Sie bitte andere Plugins und Patches, um festzustellen, ob es sich tatsächlich um ein ZenOS-Problem handelt."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:60
+msgid "Beginning"
+msgstr "Anfang"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:962
@@ -923,6 +1019,12 @@ msgstr "Buch"
 msgid "Book added to download list"
 msgstr "Buch zur Download-Liste hinzugefügt"
 
+#. Type: message
+#. Context: Bezeichnung einer Einstellung in den Leseeinstellungen.
+#: reader_settings.lua:1690
+msgid "Book club questions at the end of chapters, offline. Answer in a few words or attach a highlight; all answers can be exported."
+msgstr "Lesekreis-Fragen am Kapitelende, offline. In ein paar Worten antworten oder eine Markierung anhängen; alle Antworten lassen sich exportieren."
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs. Bezeichnung im Editor für Buchmetadaten. Bezeichnung in der Leseansicht. Wird auch an anderen Stellen in ZenOS verwendet.
 #: metadata_editor.lua:400 metadata_editor.lua:401 book_info_card.lua:102 book_details.lua:506 book_info_widget.lua:135 page_browser_tabs.lua:51 library_settings.lua:223 library_settings.lua:1196
@@ -946,6 +1048,18 @@ msgstr "Das Buch wurde ins Archiv verschoben."
 #: archive_actions.lua:199
 msgid "Book moved to library."
 msgstr "Das Buch wurde in die Bibliothek gebracht."
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:841
+msgid "book not found"
+msgstr "Buch nicht gefunden"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1224
+msgid "book not found – answers not available"
+msgstr "Buch nicht gefunden – Antworten nicht verfügbar"
 
 #. Type: title
 #. Context: viewer = require("ui/widget/textviewer"):new{ title = record.kind == "note" and _("Book note") or record.title, show_menu = false,
@@ -1151,6 +1265,12 @@ msgstr "Groß- und Kleinschreibung beachten"
 msgid "Casual Chess"
 msgstr "Gelegenheits-Schach"
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1105
+msgid "Category (two questions at one stop come from different categories)"
+msgstr "Kategorie (zwei Fragen an einer Stelle kommen aus verschiedenen Kategorien)"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:440
@@ -1198,6 +1318,12 @@ msgstr "Kapitelmarken"
 #: annotation_viewer.lua:29
 msgid "Chapters"
 msgstr "Kapitel"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:66 controller.lua:876 controller.lua:1252
+msgid "Characters"
+msgstr "Figuren"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Menü zur Akkustatistik.
@@ -1650,6 +1776,12 @@ msgid "Could not read Bluetooth devices."
 msgstr "Bluetooth-Geräte konnten nicht gelesen werden."
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:855
+msgid "Could not read the answers of this book."
+msgstr "Die Antworten dieses Buchs konnten nicht gelesen werden."
+
+#. Type: dialog
 #. Context: Text eines Dialogs im Menü zur Akkustatistik.
 #: battery_stats_menu.lua:61
 msgid "Could not save battery history. The log was kept."
@@ -1690,6 +1822,18 @@ msgstr "WLAN konnte nicht aktiviert werden."
 #: bluetooth_switcher.lua:96
 msgid "Could not update %1."
 msgstr "%1 konnte nicht aktualisiert werden."
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:917 controller.lua:1179
+msgid "Could not write %1"
+msgstr "%1 konnte nicht geschrieben werden"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:904
+msgid "Counted in the part you have read: the 2–3 most named people with at least 15 % of all mentions are main characters. ✎ = set on the lexicon card (Role: Main or Role: Side)."
+msgstr "Gezählt im bereits gelesenen Teil: Die 2–3 am häufigsten genannten Personen mit mindestens 15 % aller Nennungen sind Hauptfiguren. ✎ = auf der Lexikon-Karte festgelegt (Rolle: Hauptfigur oder Nebenfigur)."
 
 #. Type: title
 #. Context: Überschrift im Editor für Buchmetadaten. Bezeichnung in der ZenOS-Oberfläche.
@@ -2099,6 +2243,12 @@ msgstr "Dieses benutzerdefinierte Design löschen?"
 msgid "Delete this folder and its buttons?"
 msgstr "Diesen Ordner und seine Buttons löschen?"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1069
+msgid "Delete this question?\n\n%1"
+msgstr "Diese Frage löschen?\n\n%1"
+
 #. Type: message
 #. Context: Hinweis in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs.
 #: app_launcher_settings.lua:934
@@ -2158,6 +2308,12 @@ msgstr "Wörterbuch"
 #: lookup_plugin_items.lua:8 dict_quick_lookup.lua:291 dict_quick_lookup.lua:490
 msgid "Dictionary lookup"
 msgstr "Wörterbuch-Nachschlagen"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:417
+msgid "Did your opinion of %1 change by the end?"
+msgstr "Hat sich deine Meinung über %1 bis zum Ende geändert?"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
@@ -2351,6 +2507,18 @@ msgstr "Bearbeitungsmodus"
 msgid "Edit note"
 msgstr "Bearbeitungshinweis"
 
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1084
+msgid "Edit question"
+msgstr "Frage bearbeiten"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1280
+msgid "Edit questions"
+msgstr "Fragen bearbeiten"
+
 #. Type: label
 #. Context: Bezeichnung im Editor für Buchmetadaten.
 #: metadata_editor.lua:274
@@ -2429,6 +2597,12 @@ msgstr "Aktivierte Metadatenanbieter benötigen API-Zugangsdaten. Einstellungen 
 msgid "Enabling debug logging, restart required. Please reproduce the issue, then submit the report."
 msgstr "Aktivierung der Debug-Protokollierung erfordert einen Neustart. Bitte reproduzieren Sie den Fehler und senden Sie dann den Bericht ab."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:60
+msgid "End"
+msgstr "Ende"
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zur Ansicht am Buchende. Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Leseansicht. Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite.
 #: end_book_settings.lua:257 reader_settings.lua:1684 home_settings.lua:1528
@@ -2496,6 +2670,12 @@ msgid "Estimated time to complete charge"
 msgstr "Geschätzte Zeit bis zum Abschluss der Aufladung"
 
 #. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:53
+msgid "Every 3rd chapter"
+msgstr "Jedes 3. Kapitel"
+
+#. Type: label
 #. Context: Bezeichnung im Editor für Buchmetadaten.
 #: metadata_editor.lua:257
 msgid "Exact ISBN match"
@@ -2536,6 +2716,30 @@ msgstr "Beenden"
 #: context_menu.lua:759
 msgid "Exit select mode"
 msgstr "Auswahlmodus beenden"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:821
+msgid "Export all"
+msgstr "Alle exportieren"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1250
+msgid "Export all books"
+msgstr "Alle Bücher exportieren"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1248
+msgid "Export answers"
+msgstr "Antworten exportieren"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1184
+msgid "Exported:\n%1"
+msgstr "Exportiert:\n%1"
 
 #. Type: label
 #. Context: start_prev = _("Extend start"), start_next = _("Contract start"), end_prev = _("Contract end"), end_next = _("Extend end"), }
@@ -2885,6 +3089,18 @@ msgstr "Bluetooth-Gerät %1 vergessen?"
 msgid "Forget Wi-Fi network %1?"
 msgstr "WLAN-Netzwerk %1 vergessen?"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:68
+msgid "From your lexicon"
+msgstr "Aus deinem Lexikon"
+
+#. Type: subtitle
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:877
+msgid "from your lexicon"
+msgstr "aus deinem Lexikon"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen.
 #: menu_settings.lua:89
@@ -3004,6 +3220,12 @@ msgstr "Gebundene Ausgabe"
 #: metadata_settings.lua:104 metadata_settings.lua:107
 msgid "Hardcover API token"
 msgstr "Hardcover-API-Token"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:402
+msgid "Has %1 changed since the beginning?"
+msgstr "Hat sich %1 seit dem Anfang verändert?"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Menü zur Akkustatistik.
@@ -3178,6 +3400,12 @@ msgstr "Horizontal"
 #: zen_settings_utils.lua:470
 msgid "Hour"
 msgstr "Stunde"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:401
+msgid "How has the relationship between %1 and %2 changed?"
+msgstr "Wie hat sich die Beziehung zwischen %1 und %2 verändert?"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite.
@@ -3365,6 +3593,12 @@ msgstr "Elemente pro Seite"
 msgid "Items per row"
 msgstr "Elemente pro Zeile"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:502 controller.lua:723
+msgid "journal"
+msgstr "Tagebuch"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite.
 #: home_settings.lua:424
@@ -3394,6 +3628,12 @@ msgstr "Weiter bearbeiten"
 #: quickstart_pages.lua:757 quickstart_pages.lua:807
 msgid "Keep existing settings"
 msgstr "Bestehende Einstellungen beibehalten"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:519
+msgid "Keep reading"
+msgstr "Weiterlesen"
 
 #. Type: error
 #. Context: Fehlermeldung im Editor für Buchmetadaten.
@@ -3478,6 +3718,12 @@ msgstr "Sprachen"
 #: library_settings.lua:475
 msgid "Large"
 msgstr "Groß"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:837
+msgid "last answer %1"
+msgstr "letzte Antwort %1"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite. Bezeichnung in der ZenOS-Oberfläche.
@@ -3827,6 +4073,12 @@ msgstr "Die Metadaten wurden gespeichert, das Titelbild konnte jedoch nicht gesp
 msgid "Metric"
 msgstr "Metrisch"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:60
+msgid "Middle"
+msgstr "Mitte"
+
 #. Type: unit
 #. Context: Einheit für Mengen oder Zeitangaben in den Einstellungen zu Lesezielen und im zugehörigen Startseiten-Widget. Einheit für Mengen oder Zeitangaben in der ZenOS-Oberfläche.
 #: reading_goals.lua:103 reading_goals.lua:281 incognito_mode.lua:248 incognito_mode.lua:262
@@ -4013,6 +4265,12 @@ msgstr "Netzwerk nicht verfügbar."
 msgid "Networks with WEP encryption are not supported."
 msgstr "Netzwerke mit WEP-Verschlüsselung werden nicht unterstützt."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:55
+msgid "Never (only from the menu)"
+msgstr "Nie (nur über das Menü)"
+
 #. Type: status
 #. Context: Statusanzeige in der Buchbibliothek. Bezeichnung im Editor für Buchmetadaten. Bezeichnung im Kontextmenü für Bücher und Ordner. Wird auch an anderen Stellen in ZenOS verwendet.
 #: metadata_editor.lua:609 browser_list_item_layout.lua:467 context_menu.lua:2454 zen_renderer.lua:828 strip_common.lua:532
@@ -4048,6 +4306,12 @@ msgstr "„Neu“ umfasst ungelesene Bücher und Bücher, die seit dem letzten �
 #: annotation_viewer.lua:580
 msgid "New note"
 msgstr "Neue Notiz"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1084
+msgid "New question"
+msgstr "Neue Frage"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite.
@@ -4169,6 +4433,24 @@ msgstr "Zeit für Farbtemperatur (Nacht)"
 msgid "No"
 msgstr "NEIN"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1224
+msgid "no answers"
+msgstr "keine Antworten"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1192 controller.lua:1219
+msgid "No answers yet."
+msgstr "Noch keine Antworten."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:822
+msgid "No answers yet. The books you answer questions for are listed here, the last answered first."
+msgstr "Noch keine Antworten. Hier stehen die Bücher, zu denen du Fragen beantwortest – das zuletzt beantwortete zuerst."
+
 #. Type: dialog
 #. Context: Text eines Dialogs in den Menüs und Dialogen zum Archivieren von Büchern.
 #: archive_actions.lua:169
@@ -4247,6 +4529,12 @@ msgstr "Kein Änderungsprotokoll vorhanden."
 msgid "No description."
 msgstr "Keine Beschreibung."
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:607
+msgid "No highlights in this book yet."
+msgstr "Noch keine Markierungen in diesem Buch."
+
 #. Type: message
 #. Context: Hinweis in der Leseansicht.
 #: end_book_data.lua:289
@@ -4284,10 +4572,34 @@ msgid "No metadata providers are enabled. Open settings?"
 msgstr "Es sind keine Metadatenanbieter aktiviert. Einstellungen öffnen?"
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:509
+msgid "No more questions for this part."
+msgstr "Keine weiteren Fragen für diesen Teil."
+
+#. Type: dialog
 #. Context: Text eines Dialogs im Formular für Fehlerberichte.
 #: zen_bugreporter.lua:231
 msgid "No network connection. Please connect to Wi-Fi and try again."
 msgstr "Keine Netzwerkverbindung. Bitte mit dem WLAN verbinden und erneut versuchen."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:878
+msgid "No people in this book's lexicon.\n\nWith a book lexicon you can make cards for the people of a book. Thoughtful Reading then asks about the main characters (once after 40 % and once at the end)."
+msgstr "Keine Personen im Lexikon dieses Buchs.\n\nMit einem Buch-Lexikon kannst du Karten für die Personen eines Buchs anlegen. Thoughtful Reading fragt dann nach den Hauptfiguren (einmal nach 40 % und einmal am Ende)."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:766
+msgid "No questions here."
+msgstr "Hier gibt es keine Fragen."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:954
+msgid "No questions in this part."
+msgstr "Keine Fragen in diesem Teil."
 
 #. Type: message
 #. Context: Hinweis auf der Startseite und in ihren Widgets.
@@ -4355,6 +4667,12 @@ msgstr "Keine"
 msgid "None (folder name only)"
 msgstr "Keine (nur Ordnername)"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1114
+msgid "Nonfiction"
+msgstr "Sachbuch"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:474 library_settings.lua:493
@@ -4379,6 +4697,12 @@ msgstr "Nicht genügend Speicherplatz: %1/%2 Einheiten verwendet; dieses Widget 
 msgid "Not set"
 msgstr "Nicht festgelegt"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:890
+msgid "not yet"
+msgstr "noch nicht"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: highlight_menu_items.lua:11 library_settings.lua:48
@@ -4390,6 +4714,18 @@ msgstr "Notiz"
 #: annotation_viewer.lua:490 annotation_viewer.lua:540
 msgid "Note text"
 msgstr "Notiztext"
+
+#. Type: button
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:594
+msgid "Noted in my journal"
+msgstr "In meinem Tagebuch notiert"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1169
+msgid "noted in my journal"
+msgstr "in meinem Tagebuch notiert"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs. Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen. Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite. Wird auch an anderen Stellen in ZenOS verwendet.
@@ -4451,11 +4787,23 @@ msgstr "In der Warteschleife"
 msgid "On Home refresh"
 msgstr "Auf Startseite aktualisieren"
 
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:499
+msgid "One more"
+msgstr "Noch eine"
+
 #. Type: label
 #. Context: Bezeichnung im Editor für Buchmetadaten.
 #: metadata_editor.lua:1105
 msgid "One per line"
 msgstr "Eins pro Zeile"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:54
+msgid "Only beginning, middle, end"
+msgstr "Nur Anfang, Mitte, Ende"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
@@ -4468,6 +4816,18 @@ msgstr "Nur im Zen-Modus"
 #: app_launcher_settings.lua:1022
 msgid "Only show while reading"
 msgstr "Nur beim Lesen anzeigen"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1114
+msgid "Only with tags …"
+msgstr "Nur mit Tags …"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:941
+msgid "only: %1"
+msgstr "nur: %1"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Darstellung der Oberfläche. Bezeichnung in der ZenOS-Oberfläche.
@@ -4492,6 +4852,12 @@ msgstr "OPDS"
 #: home_page.lua:2464 network_switcher.lua:624 opening_banner.lua:550
 msgid "Open"
 msgstr "Öffnen"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:759
+msgid "Open book"
+msgstr "Buch öffnen"
 
 #. Type: title
 #. Context: Überschrift im Aktionsmenü für Gesten und Tastenkürzel. Bezeichnung einer Einstellung in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs. Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste.
@@ -4522,6 +4888,12 @@ msgstr "Öffnen Sie das Menü zum Launcher"
 #: book_status.lua:231
 msgid "Open next file"
 msgstr "Nächste Datei öffnen"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:838
+msgid "open now"
+msgstr "jetzt geöffnet"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zur Navigationsleiste.
@@ -4576,6 +4948,12 @@ msgstr "Öffnen Sie Zen UI Einstellungen → Bibliothek → Metadaten, um Anbiet
 #: zen_settings.lua:60 zenpm_installer.lua:408
 msgid "Open ZenPM"
 msgstr "ZenPM öffnen"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:718
+msgid "open – tap to answer"
+msgstr "offen – zum Antworten antippen"
 
 #. Type: label
 #. Context: Bezeichnung in der Leseansicht.
@@ -4642,6 +5020,12 @@ msgstr "Vorhandene Dateien überschreiben"
 #: utils.lua:357
 msgid "p."
 msgstr "S."
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:313
+msgid "p. %1"
+msgstr "S. %1"
 
 #. Type: unit
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -4751,6 +5135,12 @@ msgstr "Paar"
 msgid "Paired"
 msgstr "Paar"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1096
+msgid "Part of the book"
+msgstr "Teil des Buchs"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den erweiterten Einstellungen.
 #: advanced_settings.lua:38
@@ -4792,6 +5182,12 @@ msgstr "Pro Seite"
 #: home_settings.lua:590
 msgid "Percent"
 msgstr "Prozent"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:67
+msgid "Personal"
+msgstr "Persönlich"
 
 #. Type: label
 #. Context: Bezeichnung auf der Seite der Lesestatistiken.
@@ -4847,6 +5243,12 @@ msgstr "Platzieren Sie Pack-Ordner oder ZIP-Dateien in /koreader/icons/zen. ZIP-
 msgid "Please delete the Project: Title plugin from your plugins folder and restart KOReader."
 msgstr "Bitte löschen Sie das „Project: Title“-Plugin aus Ihrem Plugins-Ordner und starten Sie KOReader neu."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:66
+msgid "Plot"
+msgstr "Handlung"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen. Bezeichnung in den Navigationsreitern und auf den Schnelleinstellungs-Schaltflächen. Bezeichnung einer Einstellung in den Einstellungen zu Schaltflächen und Seiten des Schnellzugriffs. Wird auch an anderen Stellen in ZenOS verwendet.
 #: nav_button_model.lua:151 quick_settings.lua:1195 app_launcher_settings.lua:886 menu_settings.lua:484 menu_settings.lua:782 menu_settings.lua:850 home_settings.lua:1496 navbar_settings.lua:331 navbar_settings.lua:511 navbar_settings.lua:783
@@ -4871,6 +5273,12 @@ msgstr "Plugin-Verwaltung"
 msgid "Plugin Menu"
 msgstr "Plugin-Menü"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:66
+msgid "Point of view"
+msgstr "Erzählperspektive"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:800 library_settings.lua:802
@@ -4888,6 +5296,12 @@ msgstr "Hochformat-Mosaikmodus"
 #: metadata_editor.lua:1073 annotation_viewer.lua:567 pin_settings.lua:55
 msgid "Position"
 msgstr "Position"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:67
+msgid "Prediction"
+msgstr "Vorhersage"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Extras und Integrationen.
@@ -4996,6 +5410,48 @@ msgstr "Lila"
 #: quick_settings.lua:1047
 msgid "Puzzle"
 msgstr "Puzzle"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1092 controller.lua:1094
+msgid "Question"
+msgstr "Frage"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1281
+msgid "Question file"
+msgstr "Fragendatei"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:950
+msgid "Questions"
+msgstr "Fragen"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1241
+msgid "Questions & answers  (%1/%2)"
+msgstr "Fragen & Antworten  (%1/%2)"
+
+#. Type: menu
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1277
+msgid "Questions about lexicon cards"
+msgstr "Fragen zu Lexikon-Karten"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1283
+msgid "Questions from:\n%1\n\n\"Edit questions\" saves your own list to\nkoreader/settings/thoughtfulreading_questions.txt.\nYou can also change that file on a PC (one question per line)."
+msgstr "Fragen aus:\n%1\n\n„Fragen bearbeiten“ speichert deine eigene Liste in\nkoreader/settings/thoughtfulreading_questions.txt.\nDiese Datei kannst du auch am PC ändern (eine Frage pro Zeile)."
+
+#. Type: menu
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1267
+msgid "Questions per stop: %1"
+msgstr "Fragen pro Stelle: %1"
 
 #. Type: title
 #. Context: Überschrift in der Einrichtungsanleitung.
@@ -5338,6 +5794,18 @@ msgstr "Umbenennen"
 #: metadata_editor.lua:952 metadata_editor.lua:1134
 msgid "Renaming the file failed."
 msgstr "Das Umbenennen der Datei ist fehlgeschlagen."
+
+#. Type: button
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:975
+msgid "Replace"
+msgstr "Ersetzen"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:974
+msgid "Replace your questions with the standard list that comes with ZenOS?"
+msgstr "Deine Fragen durch die Standardliste von ZenOS ersetzen?"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Geräteinformationen und Über ZenOS.
@@ -5796,6 +6264,12 @@ msgid "Series"
 msgstr "Reihen"
 
 #. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1099
+msgid "Series (vol. 2+)"
+msgstr "Reihe (ab Bd. 2)"
+
+#. Type: label
 #. Context: Bezeichnung in den Bibliotheksgruppen nach Autoren, Reihen und Schlagwörtern.
 #: group_view.lua:864
 msgid "Series number"
@@ -6113,6 +6587,18 @@ msgstr "Seitenpunkte anzeigen"
 msgid "Show progress bar"
 msgstr "Fortschrittsbalken anzeigen"
 
+#. Type: menu
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1257
+msgid "Show questions"
+msgstr "Fragen zeigen"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1256
+msgid "Show questions: %1"
+msgstr "Fragen zeigen: %1"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Darstellung und Verhalten der Bibliothek.
 #: library_settings.lua:637
@@ -6353,6 +6839,12 @@ msgstr "Stapel"
 msgid "Standard"
 msgstr "Standard"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:971
+msgid "Standard questions"
+msgstr "Standardfragen"
+
 #. Type: message
 #. Context: Hinweis in der ZenOS-Oberfläche.
 #: cover_utils.lua:147
@@ -6575,6 +7067,12 @@ msgstr "Tags"
 msgid "tags"
 msgstr "Tags"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1121
+msgid "Tags (separated by commas)"
+msgstr "Tags (durch Kommas getrennt)"
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu den Schaltflächen der Schnelleinstellungen. Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen.
 #: quick_settings.lua:899 menu_settings.lua:114 menu_settings.lua:669 menu_settings.lua:671
@@ -6586,6 +7084,18 @@ msgstr "Tailscale"
 #: quickstart_pages.lua:703
 msgid "Tap and hold any book or folder in your library to reveal details."
 msgstr "Tippen und halten Sie ein beliebiges Buch oder einen Ordner in Ihrer Bibliothek, um Details anzuzeigen."
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1120
+msgid "Tap to enter tags, e.g. crime, thriller"
+msgstr "Antippen, um Tags einzugeben, z. B. krimi, thriller"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1093
+msgid "Tap to write the question …"
+msgstr "Antippen, um die Frage zu schreiben …"
 
 #. Type: action
 #. Context: end rows[#rows + 1] = {{ text = _("Text"), callback = launch(function() local text_dialog, text_rows = nil, {}
@@ -6665,6 +7175,12 @@ msgstr "Die KOReader-Metadatenüberschreibung konnte nicht gespeichert werden."
 msgid "The place for all your books %1"
 msgstr "Der Ort für alle Ihre Bücher %1"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1033
+msgid "The question is empty."
+msgstr "Die Frage ist leer."
+
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu Darstellung und Verhalten der Leseansicht.
 #: reader_settings.lua:958 reader_settings.lua:964 reader_settings.lua:972
@@ -6712,6 +7228,12 @@ msgstr "Dieses Buch befindet sich bereits im Archiv."
 #: annotation_viewer.lua:106
 msgid "This book is no longer available."
 msgstr "Dieses Buch ist nicht mehr erhältlich."
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:849
+msgid "This book was not found:\n%1\n\nIts answers were kept with the book (in its .sdr folder)."
+msgstr "Dieses Buch wurde nicht gefunden:\n%1\n\nSeine Antworten sind beim Buch gespeichert (in seinem .sdr-Ordner)."
 
 #. Type: dialog
 #. Context: Text eines Dialogs in den Dialogen zur Bestätigung von Einstellungsänderungen.
@@ -6768,6 +7290,12 @@ msgid "This option is disabled when a home folder is the device storage root. Se
 msgstr "Diese Option ist deaktiviert, wenn der Stammordner des Gerätes als Startordner festgelegt ist. Legen Sie zuerst spezifischere Bücherordner als Startordner fest."
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1051
+msgid "This question is already in the list."
+msgstr "Diese Frage ist schon in der Liste."
+
+#. Type: dialog
 #. Context: Reader tab controls, defaults, profiles, and themes.
 #: profiles.lua:108
 msgid "This reader profile is not compatible with the current document."
@@ -6796,6 +7324,36 @@ msgstr "Dieses Jahr"
 #: stats_settings.lua:30
 msgid "This year"
 msgstr "Dieses Jahr"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:762 controller.lua:1233
+msgid "Thoughtful Reading"
+msgstr "Thoughtful Reading"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1235
+msgid "Thoughtful Reading - all books"
+msgstr "Thoughtful Reading - alle Bücher"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:1232
+msgid "Thoughtful Reading – all books"
+msgstr "Thoughtful Reading – alle Bücher"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:199
+msgid "Thoughtful Reading: ask me now"
+msgstr "Thoughtful Reading: jetzt fragen"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:201
+msgid "Thoughtful Reading: questions & answers"
+msgstr "Thoughtful Reading: Fragen & Antworten"
 
 #. Type: title
 #. Context: Überschrift in den Einstellungen zu Aufbau und Widgets der Startseite. Auswählbare Option in den Einstellungen zu Lesezielen und im zugehörigen Startseiten-Widget. Bezeichnung auf der Seite der Lesestatistiken. Wird auch an anderen Stellen in ZenOS verwendet.
@@ -7565,6 +8123,12 @@ msgstr "Während des Schlafs"
 msgid "While awake"
 msgstr "Im Wachzustand"
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:459
+msgid "Why did you mark this?"
+msgstr "Warum hast du das markiert?"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen. Bezeichnung einer Einstellung in den allgemeinen Einstellungen. Bezeichnung einer Einstellung in den Einstellungen zu den Schaltflächen der Schnelleinstellungen. Wird auch an anderen Stellen in ZenOS verwendet.
 #: quick_settings.lua:586 quick_settings.lua:588 general_settings.lua:17 menu_settings.lua:86 reader_settings.lua:285 status_bar_settings.lua:30
@@ -7631,6 +8195,12 @@ msgstr "Widgets"
 msgid "Wikipedia"
 msgstr "Wikipedia"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:66
+msgid "World"
+msgstr "Welt"
+
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung in den Einstellungen zu Aufbau und Widgets der Startseite.
 #: home_settings.lua:414
@@ -7672,6 +8242,24 @@ msgstr "Sie haben ungespeicherte Metadatenänderungen."
 #: quickstart_pages.lua:840
 msgid "You're All Set"
 msgstr "Alles bereit"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:414
+msgid "your answer"
+msgstr "deine Antwort"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:414
+msgid "your answer · p. %1"
+msgstr "deine Antwort · S. %1"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (Lesekreis-Fragen am Kapitelende).
+#: controller.lua:68
+msgid "Your highlight"
+msgstr "Deine Markierung"
 
 #. Type: setting
 #. Context: Bezeichnung einer Einstellung im Bereich der Schnelleinstellungen.

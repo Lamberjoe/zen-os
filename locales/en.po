@@ -25,6 +25,18 @@ msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:840
+msgid "%1 answers"
+msgstr "%1 answers"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1233
+msgid "%1 books"
+msgstr "%1 books"
+
+#. Type: format
 #. Context: Formatted text in the book and folder context menu.
 #: context_menu.lua:641
 msgid "%1 files"
@@ -174,6 +186,18 @@ msgstr "(none)"
 msgid "(standard)"
 msgstr "(standard)"
 
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:576
+msgid "+ Highlight"
+msgstr "+ Highlight"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:952
+msgid "+ New"
+msgstr "+ New"
+
 #. Type: subtitle
 #. Context: Subtitle in the library groups for authors, series, and tags.
 #: group_view.lua:1426
@@ -306,6 +330,12 @@ msgstr "A metadata provider rejected its API credential. Open metadata settings?
 msgid "A metadata provider returned an unreadable response."
 msgstr "A metadata provider returned an unreadable response."
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1123
+msgid "A part of the tag is enough: \"fantasy\" also matches \"Dark Fantasy\"."
+msgstr "A part of the tag is enough: \"fantasy\" also matches \"Dark Fantasy\"."
+
 #. Type: description
 #. Context: Help text in the bug report form.
 #: zen_bugreporter.lua:253
@@ -347,6 +377,12 @@ msgstr "Active tab"
 #: app_launcher_settings.lua:300 app_launcher_settings.lua:984 menu_settings.lua:708 home_settings.lua:1620 navbar_settings.lua:1435
 msgid "Add"
 msgstr "Add"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:628
+msgid "Add a highlight"
+msgstr "Add a highlight"
 
 #. Type: setting
 #. Context: Settings label in the Launcher button and page settings.
@@ -486,6 +522,24 @@ msgstr "All"
 msgid "All books"
 msgstr "All books"
 
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1244
+msgid "All books  (%1)"
+msgstr "All books  (%1)"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1114
+msgid "All novels"
+msgstr "All novels"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:942
+msgid "all novels"
+msgstr "all novels"
+
 #. Type: description
 #. Context: Help text in the setup guide.
 #: quickstart_pages.lua:835
@@ -569,6 +623,24 @@ msgstr "Annotation viewer"
 #: dispatch_action.lua:508 annotation_viewer.lua:28 annotation_viewer.lua:594 book_details.lua:386 page_browser_tabs.lua:49 library_settings.lua:47 home_settings.lua:2487
 msgid "Annotations"
 msgstr "Annotations"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:512 controller.lua:588
+msgid "Answer"
+msgstr "Answer"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:502
+msgid "answered"
+msgstr "answered"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1099
+msgid "Any chapter"
+msgstr "Any chapter"
 
 #. Type: action
 #. Context: { { text = ({ all = _("All words"), any = _("Any word"), phrase = _("Phrase") })[rule.mode], callback = function() rule.mode = ({ all = "any", any = "phrase", phrase = "all" })[rule.mode]
@@ -677,6 +749,24 @@ msgstr "Arrange right items"
 #: group_view.lua:931
 msgid "Ascending"
 msgstr "Ascending"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1247
+msgid "Ask me now"
+msgstr "Ask me now"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:412
+msgid "At %1 you wrote about %2. Was your opinion confirmed, or did it change?"
+msgstr "At %1 you wrote about %2. Was your opinion confirmed, or did it change?"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:52
+msgid "At every chapter end"
+msgstr "At every chapter end"
 
 #. Type: setting
 #. Context: Settings label in the navigation bar settings.
@@ -840,6 +930,12 @@ msgstr "Battery Stats"
 msgid "Before reporting, please disable other plugins and patches to see if this is actually a ZenOS issue."
 msgstr "Before reporting, please disable other plugins and patches to see if this is actually a ZenOS issue."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:60
+msgid "Beginning"
+msgstr "Beginning"
+
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
 #: library_settings.lua:962
@@ -936,6 +1032,12 @@ msgstr "Book"
 msgid "Book added to download list"
 msgstr "Book added to download list"
 
+#. Type: message
+#. Context: Settings label in the Reader settings.
+#: reader_settings.lua:1690
+msgid "Book club questions at the end of chapters, offline. Answer in a few words or attach a highlight; all answers can be exported."
+msgstr "Book club questions at the end of chapters, offline. Answer in a few words or attach a highlight; all answers can be exported."
+
 #. Type: title
 #. Context: Title in the Launcher button and page settings. Label in the book metadata editor. Label in the reading screen. Also used elsewhere in ZenOS.
 #: metadata_editor.lua:400 metadata_editor.lua:401 book_info_card.lua:102 book_details.lua:506 book_info_widget.lua:135 page_browser_tabs.lua:51 library_settings.lua:223 library_settings.lua:1196
@@ -959,6 +1061,18 @@ msgstr "Book moved to archive."
 #: archive_actions.lua:199
 msgid "Book moved to library."
 msgstr "Book moved to library."
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:841
+msgid "book not found"
+msgstr "book not found"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1224
+msgid "book not found – answers not available"
+msgstr "book not found – answers not available"
 
 #. Type: title
 #. Context: viewer = require("ui/widget/textviewer"):new{ title = record.kind == "note" and _("Book note") or record.title, show_menu = false,
@@ -1164,6 +1278,12 @@ msgstr "Case sensitive"
 msgid "Casual Chess"
 msgstr "Casual Chess"
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1105
+msgid "Category (two questions at one stop come from different categories)"
+msgstr "Category (two questions at one stop come from different categories)"
+
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
 #: library_settings.lua:440
@@ -1211,6 +1331,12 @@ msgstr "Chapter marks"
 #: annotation_viewer.lua:29
 msgid "Chapters"
 msgstr "Chapters"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:66 controller.lua:876 controller.lua:1252
+msgid "Characters"
+msgstr "Characters"
 
 #. Type: setting
 #. Context: Settings label in the battery statistics menu.
@@ -1669,6 +1795,12 @@ msgid "Could not read Bluetooth devices."
 msgstr "Could not read Bluetooth devices."
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:855
+msgid "Could not read the answers of this book."
+msgstr "Could not read the answers of this book."
+
+#. Type: dialog
 #. Context: Dialog text in the battery statistics menu.
 #: battery_stats_menu.lua:61
 msgid "Could not save battery history. The log was kept."
@@ -1709,6 +1841,18 @@ msgstr "Could not turn on Wi-Fi."
 #: bluetooth_switcher.lua:96
 msgid "Could not update %1."
 msgstr "Could not update %1."
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:917 controller.lua:1179
+msgid "Could not write %1"
+msgstr "Could not write %1"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:904
+msgid "Counted in the part you have read: the 2–3 most named people with at least 15 % of all mentions are main characters. ✎ = set on the lexicon card (Role: Main or Role: Side)."
+msgstr "Counted in the part you have read: the 2–3 most named people with at least 15 % of all mentions are main characters. ✎ = set on the lexicon card (Role: Main or Role: Side)."
 
 #. Type: title
 #. Context: Title in the book metadata editor. Label in the ZenOS interface.
@@ -2136,6 +2280,12 @@ msgstr "Delete this custom theme?"
 msgid "Delete this folder and its buttons?"
 msgstr "Delete this folder and its buttons?"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1069
+msgid "Delete this question?\n\n%1"
+msgstr "Delete this question?\n\n%1"
+
 #. Type: message
 #. Context: Message in the Launcher button and page settings.
 #: app_launcher_settings.lua:934
@@ -2195,6 +2345,12 @@ msgstr "Dictionary"
 #: lookup_plugin_items.lua:8 dict_quick_lookup.lua:291 dict_quick_lookup.lua:490
 msgid "Dictionary lookup"
 msgstr "Dictionary lookup"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:417
+msgid "Did your opinion of %1 change by the end?"
+msgstr "Did your opinion of %1 change by the end?"
 
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
@@ -2388,6 +2544,18 @@ msgstr "Edit mode"
 msgid "Edit note"
 msgstr "Edit note"
 
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1084
+msgid "Edit question"
+msgstr "Edit question"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1280
+msgid "Edit questions"
+msgstr "Edit questions"
+
 #. Type: label
 #. Context: Label in the book metadata editor.
 #: metadata_editor.lua:274
@@ -2466,6 +2634,12 @@ msgstr "Enabled metadata providers need an API credential. Open settings?"
 msgid "Enabling debug logging, restart required. Please reproduce the issue, then submit the report."
 msgstr "Enabling debug logging, restart required. Please reproduce the issue, then submit the report."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:60
+msgid "End"
+msgstr "End"
+
 #. Type: title
 #. Context: Title in the end-of-book screen settings. Settings label in the Reader appearance and behavior settings. Settings label in the Home layout and widget settings.
 #: end_book_settings.lua:257 reader_settings.lua:1684 home_settings.lua:1528
@@ -2533,6 +2707,12 @@ msgid "Estimated time to complete charge"
 msgstr "Estimated time to complete charge"
 
 #. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:53
+msgid "Every 3rd chapter"
+msgstr "Every 3rd chapter"
+
+#. Type: label
 #. Context: Label in the book metadata editor.
 #: metadata_editor.lua:257
 msgid "Exact ISBN match"
@@ -2573,6 +2753,30 @@ msgstr "Exit"
 #: context_menu.lua:759
 msgid "Exit select mode"
 msgstr "Exit select mode"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:821
+msgid "Export all"
+msgstr "Export all"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1250
+msgid "Export all books"
+msgstr "Export all books"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1248
+msgid "Export answers"
+msgstr "Export answers"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1184
+msgid "Exported:\n%1"
+msgstr "Exported:\n%1"
 
 #. Type: label
 #. Context: start_prev = _("Extend start"), start_next = _("Contract start"), end_prev = _("Contract end"), end_next = _("Extend end"), }
@@ -2928,6 +3132,18 @@ msgstr "Forget Bluetooth device %1?"
 msgid "Forget Wi-Fi network %1?"
 msgstr "Forget Wi-Fi network %1?"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:68
+msgid "From your lexicon"
+msgstr "From your lexicon"
+
+#. Type: subtitle
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:877
+msgid "from your lexicon"
+msgstr "from your lexicon"
+
 #. Type: setting
 #. Context: Settings label in the Quick Settings button settings.
 #: menu_settings.lua:89
@@ -3047,6 +3263,12 @@ msgstr "Hardcover"
 #: metadata_settings.lua:104 metadata_settings.lua:107
 msgid "Hardcover API token"
 msgstr "Hardcover API token"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:402
+msgid "Has %1 changed since the beginning?"
+msgstr "Has %1 changed since the beginning?"
 
 #. Type: setting
 #. Context: Settings label in the battery statistics menu.
@@ -3221,6 +3443,12 @@ msgstr "Horizontal"
 #: zen_settings_utils.lua:470
 msgid "Hour"
 msgstr "Hour"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:401
+msgid "How has the relationship between %1 and %2 changed?"
+msgstr "How has the relationship between %1 and %2 changed?"
 
 #. Type: setting
 #. Context: Settings label in the Home layout and widget settings.
@@ -3408,6 +3636,12 @@ msgstr "Items per page"
 msgid "Items per row"
 msgstr "Items per row"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:502 controller.lua:723
+msgid "journal"
+msgstr "journal"
+
 #. Type: setting
 #. Context: Settings label in the Home layout and widget settings.
 #: home_settings.lua:424
@@ -3437,6 +3671,12 @@ msgstr "Keep editing"
 #: quickstart_pages.lua:757 quickstart_pages.lua:807
 msgid "Keep existing settings"
 msgstr "Keep existing settings"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:519
+msgid "Keep reading"
+msgstr "Keep reading"
 
 #. Type: error
 #. Context: Error message in the book metadata editor.
@@ -3521,6 +3761,12 @@ msgstr "Languages"
 #: library_settings.lua:475
 msgid "Large"
 msgstr "Large"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:837
+msgid "last answer %1"
+msgstr "last answer %1"
 
 #. Type: setting
 #. Context: Settings label in the Home layout and widget settings. Label in the ZenOS interface.
@@ -3870,6 +4116,12 @@ msgstr "Metadata was saved, but the cover image could not be saved."
 msgid "Metric"
 msgstr "Metric"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:60
+msgid "Middle"
+msgstr "Middle"
+
 #. Type: setting
 #. Context: Built-in reader theme name.
 #: reader_settings.lua
@@ -4062,6 +4314,12 @@ msgstr "Network unavailable."
 msgid "Networks with WEP encryption are not supported."
 msgstr "Networks with WEP encryption are not supported."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:55
+msgid "Never (only from the menu)"
+msgstr "Never (only from the menu)"
+
 #. Type: status
 #. Context: Status message in the book library. Label in the book metadata editor. Label in the book and folder context menu. Also used elsewhere in ZenOS.
 #: metadata_editor.lua:609 browser_list_item_layout.lua:467 context_menu.lua:2454 zen_renderer.lua:828 strip_common.lua:532
@@ -4097,6 +4355,12 @@ msgstr "New includes unread books and books modified since they were last opened
 #: annotation_viewer.lua:580
 msgid "New note"
 msgstr "New note"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1084
+msgid "New question"
+msgstr "New question"
 
 #. Type: setting
 #. Context: Settings label in the Home layout and widget settings.
@@ -4218,6 +4482,24 @@ msgstr "Night warmth time"
 msgid "No"
 msgstr "No"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1224
+msgid "no answers"
+msgstr "no answers"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1192 controller.lua:1219
+msgid "No answers yet."
+msgstr "No answers yet."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:822
+msgid "No answers yet. The books you answer questions for are listed here, the last answered first."
+msgstr "No answers yet. The books you answer questions for are listed here, the last answered first."
+
 #. Type: dialog
 #. Context: Dialog text in the menus and dialogs for moving books into or out of the configured archive folder.
 #: archive_actions.lua:169
@@ -4296,6 +4578,12 @@ msgstr "No changelog provided."
 msgid "No description."
 msgstr "No description."
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:607
+msgid "No highlights in this book yet."
+msgstr "No highlights in this book yet."
+
 #. Type: message
 #. Context: Message in the reading screen.
 #: end_book_data.lua:289
@@ -4333,10 +4621,34 @@ msgid "No metadata providers are enabled. Open settings?"
 msgstr "No metadata providers are enabled. Open settings?"
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:509
+msgid "No more questions for this part."
+msgstr "No more questions for this part."
+
+#. Type: dialog
 #. Context: Dialog text in the bug report form.
 #: zen_bugreporter.lua:231
 msgid "No network connection. Please connect to Wi-Fi and try again."
 msgstr "No network connection. Please connect to Wi-Fi and try again."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:878
+msgid "No people in this book's lexicon.\n\nWith a book lexicon you can make cards for the people of a book. Thoughtful Reading then asks about the main characters (once after 40 % and once at the end)."
+msgstr "No people in this book's lexicon.\n\nWith a book lexicon you can make cards for the people of a book. Thoughtful Reading then asks about the main characters (once after 40 % and once at the end)."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:766
+msgid "No questions here."
+msgstr "No questions here."
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:954
+msgid "No questions in this part."
+msgstr "No questions in this part."
 
 #. Type: message
 #. Context: Message in the Home page and its widgets.
@@ -4404,6 +4716,12 @@ msgstr "None"
 msgid "None (folder name only)"
 msgstr "None (folder name only)"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1114
+msgid "Nonfiction"
+msgstr "Nonfiction"
+
 #. Type: setting
 #. Context: Built-in reader theme name.
 #: reader_settings.lua
@@ -4434,6 +4752,12 @@ msgstr "Not enough space: %1/%2 units used; this widget needs %3."
 msgid "Not set"
 msgstr "Not set"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:890
+msgid "not yet"
+msgstr "not yet"
+
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
 #: highlight_menu_items.lua:11 library_settings.lua:48
@@ -4445,6 +4769,18 @@ msgstr "Note"
 #: annotation_viewer.lua:490 annotation_viewer.lua:540
 msgid "Note text"
 msgstr "Note text"
+
+#. Type: button
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:594
+msgid "Noted in my journal"
+msgstr "Noted in my journal"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1169
+msgid "noted in my journal"
+msgstr "noted in my journal"
 
 #. Type: setting
 #. Context: Settings label in the Launcher button and page settings. Settings label in the Quick Settings button settings. Settings label in the Home layout and widget settings. Also used elsewhere in ZenOS.
@@ -4512,11 +4848,23 @@ msgstr "On hold"
 msgid "On Home refresh"
 msgstr "On Home refresh"
 
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:499
+msgid "One more"
+msgstr "One more"
+
 #. Type: label
 #. Context: Label in the book metadata editor.
 #: metadata_editor.lua:1105
 msgid "One per line"
 msgstr "One per line"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:54
+msgid "Only beginning, middle, end"
+msgstr "Only beginning, middle, end"
 
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
@@ -4529,6 +4877,18 @@ msgstr "Only in Zen mode"
 #: app_launcher_settings.lua:1022
 msgid "Only show while reading"
 msgstr "Only show while reading"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1114
+msgid "Only with tags …"
+msgstr "Only with tags …"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:941
+msgid "only: %1"
+msgstr "only: %1"
 
 #. Type: setting
 #. Context: Settings label in the Interface appearance settings. Label in the ZenOS interface.
@@ -4553,6 +4913,12 @@ msgstr "OPDS"
 #: home_page.lua:2464 network_switcher.lua:624 opening_banner.lua:550
 msgid "Open"
 msgstr "Open"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:759
+msgid "Open book"
+msgstr "Open book"
 
 #. Type: title
 #. Context: Title in the gesture and shortcut action menu. Settings label in the Launcher button and page settings. Settings label in the navigation bar settings.
@@ -4583,6 +4949,12 @@ msgstr "Open menu to Launcher"
 #: book_status.lua:231
 msgid "Open next file"
 msgstr "Open next file"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:838
+msgid "open now"
+msgstr "open now"
 
 #. Type: setting
 #. Context: Settings label in the navigation bar settings.
@@ -4637,6 +5009,12 @@ msgstr "Open Zen UI Settings → Library → Metadata to configure providers."
 #: zen_settings.lua:60 zenpm_installer.lua:408
 msgid "Open ZenPM"
 msgstr "Open ZenPM"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:718
+msgid "open – tap to answer"
+msgstr "open – tap to answer"
 
 #. Type: label
 #. Context: Label in the reading screen.
@@ -4703,6 +5081,12 @@ msgstr "overwrite existing files"
 #: utils.lua:357
 msgid "p."
 msgstr "p."
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:313
+msgid "p. %1"
+msgstr "p. %1"
 
 #. Type: unit
 #. Context: Reader tab controls, defaults, profiles, and themes.
@@ -4812,6 +5196,12 @@ msgstr "Pair"
 msgid "Paired"
 msgstr "Paired"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1096
+msgid "Part of the book"
+msgstr "Part of the book"
+
 #. Type: setting
 #. Context: Settings label in the advanced settings.
 #: advanced_settings.lua:38
@@ -4853,6 +5243,12 @@ msgstr "Per page"
 #: home_settings.lua:590
 msgid "Percent"
 msgstr "Percent"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:67
+msgid "Personal"
+msgstr "Personal"
 
 #. Type: label
 #. Context: Label in the reading statistics page.
@@ -4908,6 +5304,12 @@ msgstr "Place pack folders or ZIP files in /koreader/icons/zen. ZIP files are in
 msgid "Please delete the Project: Title plugin from your plugins folder and restart KOReader."
 msgstr "Please delete the Project: Title plugin from your plugins folder and restart KOReader."
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:66
+msgid "Plot"
+msgstr "Plot"
+
 #. Type: setting
 #. Context: Settings label in the Quick Settings panel. Label in the navigation tabs and Quick Settings buttons. Settings label in the Launcher button and page settings. Also used elsewhere in ZenOS.
 #: nav_button_model.lua:151 quick_settings.lua:1195 app_launcher_settings.lua:886 menu_settings.lua:484 menu_settings.lua:782 menu_settings.lua:850 home_settings.lua:1496 navbar_settings.lua:331 navbar_settings.lua:511 navbar_settings.lua:783
@@ -4932,6 +5334,12 @@ msgstr "Plugin management"
 msgid "Plugin Menu"
 msgstr "Plugin Menu"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:66
+msgid "Point of view"
+msgstr "Point of view"
+
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
 #: library_settings.lua:800 library_settings.lua:802
@@ -4949,6 +5357,12 @@ msgstr "Portrait mosaic mode"
 #: metadata_editor.lua:1073 annotation_viewer.lua:567 pin_settings.lua:55
 msgid "Position"
 msgstr "Position"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:67
+msgid "Prediction"
+msgstr "Prediction"
 
 #. Type: setting
 #. Context: Settings label in the Extras and integration settings.
@@ -5057,6 +5471,48 @@ msgstr "Purple"
 #: quick_settings.lua:1047
 msgid "Puzzle"
 msgstr "Puzzle"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1092 controller.lua:1094
+msgid "Question"
+msgstr "Question"
+
+#. Type: action
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1281
+msgid "Question file"
+msgstr "Question file"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:950
+msgid "Questions"
+msgstr "Questions"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1241
+msgid "Questions & answers  (%1/%2)"
+msgstr "Questions & answers  (%1/%2)"
+
+#. Type: menu
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1277
+msgid "Questions about lexicon cards"
+msgstr "Questions about lexicon cards"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1283
+msgid "Questions from:\n%1\n\n\"Edit questions\" saves your own list to\nkoreader/settings/thoughtfulreading_questions.txt.\nYou can also change that file on a PC (one question per line)."
+msgstr "Questions from:\n%1\n\n\"Edit questions\" saves your own list to\nkoreader/settings/thoughtfulreading_questions.txt.\nYou can also change that file on a PC (one question per line)."
+
+#. Type: menu
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1267
+msgid "Questions per stop: %1"
+msgstr "Questions per stop: %1"
 
 #. Type: title
 #. Context: Title in the setup guide.
@@ -5399,6 +5855,18 @@ msgstr "Rename"
 #: metadata_editor.lua:952 metadata_editor.lua:1134
 msgid "Renaming the file failed."
 msgstr "Renaming the file failed."
+
+#. Type: button
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:975
+msgid "Replace"
+msgstr "Replace"
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:974
+msgid "Replace your questions with the standard list that comes with ZenOS?"
+msgstr "Replace your questions with the standard list that comes with ZenOS?"
 
 #. Type: setting
 #. Context: Settings label in the About and Device settings.
@@ -5875,6 +6343,12 @@ msgid "Series"
 msgstr "Series"
 
 #. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1099
+msgid "Series (vol. 2+)"
+msgstr "Series (vol. 2+)"
+
+#. Type: label
 #. Context: Label in the library groups for authors, series, and tags.
 #: group_view.lua:864
 msgid "Series number"
@@ -6198,6 +6672,18 @@ msgstr "Show page dots"
 msgid "Show progress bar"
 msgstr "Show progress bar"
 
+#. Type: menu
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1257
+msgid "Show questions"
+msgstr "Show questions"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1256
+msgid "Show questions: %1"
+msgstr "Show questions: %1"
+
 #. Type: setting
 #. Context: Settings label in the Library appearance and behavior settings.
 #: library_settings.lua:637
@@ -6438,6 +6924,12 @@ msgstr "Stack"
 msgid "Standard"
 msgstr "Standard"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:971
+msgid "Standard questions"
+msgstr "Standard questions"
+
 #. Type: message
 #. Context: Message in the ZenOS interface.
 #: cover_utils.lua:147
@@ -6660,6 +7152,12 @@ msgstr "Tags"
 msgid "tags"
 msgstr "tags"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1121
+msgid "Tags (separated by commas)"
+msgstr "Tags (separated by commas)"
+
 #. Type: title
 #. Context: Title in the Quick Settings button settings. Settings label in the Quick Settings panel.
 #: quick_settings.lua:899 menu_settings.lua:114 menu_settings.lua:669 menu_settings.lua:671
@@ -6671,6 +7169,18 @@ msgstr "Tailscale"
 #: quickstart_pages.lua:703
 msgid "Tap and hold any book or folder in your library to reveal details."
 msgstr "Tap and hold any book or folder in your library to reveal details."
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1120
+msgid "Tap to enter tags, e.g. crime, thriller"
+msgstr "Tap to enter tags, e.g. crime, thriller"
+
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1093
+msgid "Tap to write the question …"
+msgstr "Tap to write the question …"
 
 #. Type: action
 #. Context: end rows[#rows + 1] = {{ text = _("Text"), callback = launch(function() local text_dialog, text_rows = nil, {}
@@ -6750,6 +7260,12 @@ msgstr "The KOReader metadata override could not be saved."
 msgid "The place for all your books %1"
 msgstr "The place for all your books %1"
 
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1033
+msgid "The question is empty."
+msgstr "The question is empty."
+
 #. Type: title
 #. Context: Title in the Reader appearance and behavior settings.
 #: reader_settings.lua:958 reader_settings.lua:964 reader_settings.lua:972
@@ -6797,6 +7313,12 @@ msgstr "This book is already in the archive."
 #: annotation_viewer.lua:106
 msgid "This book is no longer available."
 msgstr "This book is no longer available."
+
+#. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:849
+msgid "This book was not found:\n%1\n\nIts answers were kept with the book (in its .sdr folder)."
+msgstr "This book was not found:\n%1\n\nIts answers were kept with the book (in its .sdr folder)."
 
 #. Type: dialog
 #. Context: Dialog text in the settings change confirmation dialogs.
@@ -6853,6 +7375,12 @@ msgid "This option is disabled when a home folder is the device storage root. Se
 msgstr "This option is disabled when a home folder is the device storage root. Set home folders to narrower books folders first."
 
 #. Type: dialog
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1051
+msgid "This question is already in the list."
+msgstr "This question is already in the list."
+
+#. Type: dialog
 #. Context: Reader tab controls, defaults, profiles, and themes.
 #: profiles.lua:108
 msgid "This reader profile is not compatible with the current document."
@@ -6881,6 +7409,36 @@ msgstr "This Year"
 #: stats_settings.lua:30
 msgid "This year"
 msgstr "This year"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:762 controller.lua:1233
+msgid "Thoughtful Reading"
+msgstr "Thoughtful Reading"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1235
+msgid "Thoughtful Reading - all books"
+msgstr "Thoughtful Reading - all books"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:1232
+msgid "Thoughtful Reading – all books"
+msgstr "Thoughtful Reading – all books"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:199
+msgid "Thoughtful Reading: ask me now"
+msgstr "Thoughtful Reading: ask me now"
+
+#. Type: title
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:201
+msgid "Thoughtful Reading: questions & answers"
+msgstr "Thoughtful Reading: questions & answers"
 
 #. Type: title
 #. Context: Title in the Home layout and widget settings. Selectable option in the reading goal settings and Home widget. Label in the reading statistics page. Also used elsewhere in ZenOS.
@@ -7656,6 +8214,12 @@ msgstr "While asleep"
 msgid "While awake"
 msgstr "While awake"
 
+#. Type: message
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:459
+msgid "Why did you mark this?"
+msgstr "Why did you mark this?"
+
 #. Type: setting
 #. Context: Settings label in the Quick Settings panel. Settings label in the General settings. Settings label in the Quick Settings button settings. Also used elsewhere in ZenOS.
 #: quick_settings.lua:586 quick_settings.lua:588 general_settings.lua:17 menu_settings.lua:86 reader_settings.lua:285 status_bar_settings.lua:30
@@ -7722,6 +8286,12 @@ msgstr "Widgets"
 msgid "Wikipedia"
 msgstr "Wikipedia"
 
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:66
+msgid "World"
+msgstr "World"
+
 #. Type: setting
 #. Context: Settings label in the Home layout and widget settings.
 #: home_settings.lua:414
@@ -7763,6 +8333,24 @@ msgstr "You have unsaved metadata changes."
 #: quickstart_pages.lua:840
 msgid "You're All Set"
 msgstr "You're All Set"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:414
+msgid "your answer"
+msgstr "your answer"
+
+#. Type: format
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:414
+msgid "your answer · p. %1"
+msgstr "your answer · p. %1"
+
+#. Type: label
+#. Context: Text in Thoughtful Reading (book club questions at the end of chapters).
+#: controller.lua:68
+msgid "Your highlight"
+msgstr "Your highlight"
 
 #. Type: setting
 #. Context: Settings label in the Quick Settings panel.

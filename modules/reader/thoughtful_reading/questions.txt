@@ -1,0 +1,77 @@
+# Thoughtful Reading – questions
+#
+# One question per line:   section | category | tags | question
+#
+# section   beginning (first chapters), middle (around the middle), end (last
+#           chapter / epilogue), chapter (short, for any chapter end),
+#           series (beginning of volume 2 and later)
+# category  plot, pov, characters, world, themes, style, prediction, personal
+#           (two questions at one stop come from different categories)
+# tags      empty: novels. "nonfiction": only books with a nonfiction tag.
+#           Words like "crime, thriller": only books with such a tag
+#           (a part of the tag is enough: "fantasy" matches "Dark Fantasy").
+#
+# To use your own list, copy this file to
+#   koreader/settings/thoughtfulreading_questions.txt
+# and change it there (it is not overwritten by updates).
+
+# ---- Beginning (incipit) ----------------------------------------------------
+beginning | characters |  | Who are the main protagonists?
+beginning | world      |  | When does the story occur?
+beginning | world      |  | Where does the story take place?
+beginning | pov        |  | Who is the narrator? What does it tell you about the point of view?
+beginning | world      |  | Find elements that characterise the environment and the time.
+beginning | pov        |  | What type of point of view is it?
+beginning | characters |  | Describe a main character physically and morally.
+beginning | characters |  | What relationships link the protagonists?
+beginning | plot       |  | What seems to be the goal of the main character, or the plot of the story?
+beginning | style      |  | Is a literary device used to describe a character or a place?
+beginning | themes     |  | Can you already find symbolism in the first chapters?
+beginning | prediction |  | What do you expect to happen? Note one prediction.
+beginning | characters |  | Which character do you like least so far, and why?
+beginning | personal   |  | What question does the book make you ask?
+
+# ---- Middle (adventures) ----------------------------------------------------
+middle | themes     |  | What are the main themes?
+middle | characters |  | Character arc: has the main protagonist changed? And the other characters?
+middle | characters |  | How have the other characters influenced the main character or the story?
+middle | plot       |  | Has the main goal or plot shifted since the beginning?
+middle | style      |  | Follow a symbol through the book. Which literary devices are used for it?
+middle | plot       |  | Note a plot twist (if there is one). How did it make the character feel?
+middle | style      |  | How was the plot twist told (cliffhanger, flashback, action scene …), and what did it make you feel?
+middle | characters |  | Did some background of a character change the story or your feelings towards them?
+middle | world      |  | What are the differences and similarities between this world and ours?
+middle | personal   |  | What keeps you apart from the hero? Social differences? Time?
+middle | prediction |  | Was your first prediction right? What changed?
+middle | style      |  | Which scene would you cut, and which would you expand?
+middle | personal   |  | Whose side are you on right now?
+
+# ---- End (resolution) -------------------------------------------------------
+end | characters |  | Has the main character grown as a person?
+end | style      |  | From a literary point of view, is it a "good" ending?
+end | plot       |  | Is everything resolved? If not, why do you think so?
+end | personal   |  | What will you keep from this book?
+end | personal   |  | Rate the book in one sentence. Would you reread it?
+end | characters |  | Which character would you like to follow in another story?
+end | prediction |  | Did the ending match your prediction from the beginning?
+
+# ---- Any chapter (short) ----------------------------------------------------
+chapter | personal |  | One word for this chapter?
+chapter | plot     |  | What surprised you in this chapter?
+chapter | style    |  | Which line stayed with you?
+
+# ---- Series (volume 2 and later) --------------------------------------------
+series | plot       |  | What changed since the last book?
+series | plot       |  | Which thread from before is still open?
+
+# ---- Genres -----------------------------------------------------------------
+middle | prediction | crime, krimi, thriller, mystery | Who do you suspect now, and why?
+beginning | world   | fantasy, science fiction, science-fiction, sci-fi, sf | Which rule of this world is the most interesting?
+end | themes        | military, militär, wh40k, warhammer, war | Was the cost of victory worth it?
+
+# ---- Nonfiction -------------------------------------------------------------
+beginning | themes   | nonfiction | What is the main question the author wants to answer?
+middle | themes      | nonfiction | What is the main argument so far?
+middle | style       | nonfiction | Which evidence convinced you, and which did not?
+end | personal       | nonfiction | What will you do differently after reading this?
+chapter | themes     | nonfiction | Sum up this chapter in one sentence.
